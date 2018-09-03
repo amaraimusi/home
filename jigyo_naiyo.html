@@ -1,0 +1,135 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>システム開発について | システム開発ならワクガンスソフト</title><link rel='shortcut icon' href='/home/images/favicon.ico' />
+<link href="common.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery.js" charset="utf-8"></script>
+<script type="text/javascript" src="js/date_ex.js" charset="utf-8"></script>
+<script type="text/javascript" src="js/common_home.js" charset="utf-8"></script>
+<script type="text/javascript">
+
+
+function load(){
+	//☆マークを点滅させる。
+	g_blink01("msgid2");
+
+	//本日日付を表示する。
+	todayShow();
+	
+}
+
+function todayShow(){
+	var d=new Date();
+	d=DateFormat(d,'yyyy/mm/dd');
+	$("#today_").html(d);
+}
+</script>
+<style type="text/css">
+
+
+	.komoku{
+		width:660px;
+		height:25px;
+		border-left:10px #f4b115 double;
+		border-bottom:1px #f4b115 solid;
+		margin-top:40px;
+		margin-left:40px;
+		padding-left:10px;
+		font-size:30px;
+		color:#000020;
+		padding-top:7px;
+		font-family:"ヒラギノ明朝 Pro W6", "Hiragino Mincho Pro", "HGS明朝E", "ＭＳ Ｐ明朝", serif;
+	}
+	
+	.shosai{
+		width:659px;
+		height:auto;
+		background-color:#e4f1ef;
+		margin-top:12x;
+		margin-left:60px;
+		border-bottom:1px #f4b115 solid;
+		border-right:1px #f4b115 solid;
+		font-size:1.2em;
+		padding-top:10px;
+		padding-bottom:12px;
+		color:#150015;
+	}
+</style>
+
+</head>
+
+<body onload="load()">
+<div id="container">
+  <p><img src="images/top/title.jpg" alt="A&Wフーズ" width="1024" height="120" /></p>
+  <div id="navibar">
+  <ul>
+      <li><a href="../index.html">トップ</a></li>
+      <li><a href="jigyo_naiyo.html">事業内容</a></li>
+      <li><a href="web_system.html">ＷＥＢシステムでできること</a></li>
+      <li><a href="deverop_flow.html">開発・料金</a></li>
+      <li><a href="profile.html">プロフィール</a></li>
+      <li><a href="history.html">業務履歴</a></li>
+      <li><a href="access.html">お問い合わせ</a></li>
+  </ul>
+      </div>
+<div id="maincontent_top"></div>
+<div id="maincontent">
+	<center><div id="recruit">
+	  <span id="msgid2"></span>
+		<span id="today_" style="color:#f3c6c5"></span>
+  	
+  </div></center>
+	<center>
+
+	  <br/><br/>
+
+  </center>
+
+  
+  
+<div class="komoku">概要</div>
+	<div class="shosai">
+		沖縄を開発拠点とし、さまざまなＷＥＢシステムやパッケージソフトの開発および改良を行います。
+	</div>
+
+<div class="komoku">ＷＥＢシステムの開発および改良</div>
+
+	<div class="shosai">
+		データベースと連動したＷＥＢサイトを作成したり、既存のサイトを改修したりできます。
+		その際、さまざまな機能を盛り込むことができます。詳細は「<a href="web_system.html">ＷＥＢシステムでできること</a>」を参照してください。<br />
+		他にも簡易ＷＥＢデザインや、レンタルサーバーの手配なども行えます。　　
+	</div>
+
+<div class="komoku">パッケージソフト開発および改良</div>
+	<div class="shosai">
+		Windows向けのソフト開発（C#,VB6,VB.NET)や、Excel VBAなどによる業務ツールの開発等を行えます。
+	</div>
+<div class="komoku">お手伝い</div>
+	<div class="shosai">
+		他の開発プロジェクトに、プログラマ要員として参加できます。<br />
+		スキルの詳細は<a href="profile.html">プロフィール</a>を参照してください。
+	</div>
+<div class="komoku">作業形態</div>
+	<div class="shosai">
+		基本的には在宅で作業いたしておりますが、数日間程度の出張は可能です。
+	</div>
+
+  
+ 
+
+</div><!--maincontent-->
+
+
+<div id="maincontent_btm"></div>
+
+
+  <div id="footer">
+    <h6>Copyright K.Uehara</h6>
+  </div>
+  <p></p>
+  <p></p>
+  <p></p>
+</div>
+</body>
+</html>

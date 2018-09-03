@@ -1,0 +1,125 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>プロフィール | システム開発ならワクガンスソフト</title><link rel='shortcut icon' href='/home/images/favicon.ico' />
+<link href="common.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery.js" charset="utf-8"></script>
+<script type="text/javascript" src="js/date_ex.js" charset="utf-8"></script>
+<script type="text/javascript" src="js/common_home.js" charset="utf-8"></script>
+<script type="text/javascript">
+
+
+function load(){
+	//☆マークを点滅させる。
+	g_blink01("msgid2");
+
+	//本日日付を表示する。
+	todayShow();
+	
+}
+
+function todayShow(){
+	var d=new Date();
+	d=DateFormat(d,'yyyy/mm/dd');
+	$("#today_").html(d);
+}
+</script>
+<style type="text/css">
+
+	
+	#tbl_skill{
+		width:90%;
+		font-size:1.6em;
+	}
+	
+	#tbl_skill td{
+		padding-left:12px;
+	}
+	
+	.tbl_skill_td1{
+		color:white;
+		height:32px;
+	}
+	#tbl_skill_komoku{
+		color:white;
+		width:160px;
+		background-image: url(images/back2.png);
+	}
+	
+</style>
+
+</head>
+
+<body onload="load()">
+<div id="container">
+  <p><img src="images/top/title.jpg" alt="A&Wフーズ" width="1024" height="120" /></p>
+  <div id="navibar">
+  <ul>
+      <li><a href="../index.html">トップ</a></li>
+      <li><a href="jigyo_naiyo.html">事業内容</a></li>
+      <li><a href="web_system.html">ＷＥＢシステムでできること</a></li>
+      <li><a href="deverop_flow.html">開発・料金</a></li>
+      <li><a href="profile.html">プロフィール</a></li>
+      <li><a href="history.html">業務履歴</a></li>
+      <li><a href="access.html">お問い合わせ</a></li>
+  </ul>
+      </div>
+<div id="maincontent_top"></div>
+<div id="maincontent">
+	<center><div id="recruit">
+	  <span id="msgid2"></span>
+		<span id="today_" style="color:#f3c6c5"></span>
+  	
+  </div></center>
+	<center>
+
+	  <br/><br/>
+
+  </center>
+
+  
+  <div style="padding-top:50px;padding-left:70px;"><table border="1" id="tbl_skill" >
+  	<col id="tbl_skill_komoku" />
+	  <tbody>
+			<tr><td class="tbl_skill_td1">氏名</td><td>上原健二</td></tr>	
+			<tr><td class="tbl_skill_td1">開発拠点</td><td>沖縄本部町</td></tr>	
+			<tr><td class="tbl_skill_td1">年齢</td><td>40</td>	</tr>	
+			<tr><td class="tbl_skill_td1">プログラミング暦	</td><td>17年</td></tr>	
+			<tr><td class="tbl_skill_td1">言語</td><td>
+				PHP,C#,JAVA,VB6,VB.NET,
+				Java Script,VBA,,C++
+			</td></tr>	
+			<tr><td class="tbl_skill_td1">経験DB</td><td>
+					MySQL,ACCESS,Oracle,DB2,SQL Server,SQLite
+				</td></tr>
+			<tr><td class="tbl_skill_td1">その他</td><td>
+				Androidアプリ開発,GoFデザインパターン,<br />
+				UML,AJAX,JQuery,XML,HTML5,XNA,Strute,Apache,<br />
+				CSS,CEO対策,Boostrap,google map api,各種WEB API など
+			</td></tr>
+	  </tbody>
+  </table>
+  
+  <br /><br /><br />
+		  ※2018年時点のプロフィールです。経験のない技術であっても、これまでの経験から習得には時間はあまりかからないと思います。<br />
+		 
+  </div>
+
+
+
+</div><!--maincontent-->
+
+
+<div id="maincontent_btm"></div>
+
+
+  <div id="footer">
+    <h6>Copyright K.Uehara</h6>
+  </div>
+  <p></p>
+  <p></p>
+  <p></p>
+</div>
+</body>
+</html>

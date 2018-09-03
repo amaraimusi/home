@@ -1,0 +1,358 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>ＷＥＢシステムでできること | システム開発ならワクガンスソフト</title><link rel='shortcut icon' href='/home/images/favicon.ico' />
+<link href="common.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery.js" charset="utf-8"></script>
+<script type="text/javascript" src="js/date_ex.js" charset="utf-8"></script>
+<script type="text/javascript" src="js/common_home.js" charset="utf-8"></script>
+<script type="text/javascript">
+
+
+function load(){
+	//☆マークを点滅させる。
+	g_blink01("msgid2");
+
+	//本日日付を表示する。
+	todayShow();
+	
+}
+
+function todayShow(){
+	var d=new Date();
+	d=DateFormat(d,'yyyy/mm/dd');
+	$("#today_").html(d);
+}
+</script>
+<style type="text/css">
+
+	.gaiyo{
+		padding-left:60px;
+		padding-bottom:40px;
+	}
+	
+	.gaiyo p{
+		font-size:1.5em;
+		font-weight: bold;
+		color:#012e8b;
+	}
+	
+	.gaiyo2{
+		padding-left:2em;
+		color:#2e2501;
+	}
+	
+
+	
+	.komoku{
+		width:710px;
+		height:40px;
+		margin-top:60px;
+		margin-left:50px;
+		padding-left:10px;
+		font-size:30px;
+		color:#000020;
+		padding-top:17px;
+		background-image: url(images/komoku02.png);
+	}
+	
+	.shosai{
+		width:689px;
+		height:auto;
+		background-color:#e4f1ef;
+		margin-top:12x;
+		margin-left:80px;
+		border-bottom:1px #9c9cf3 solid;
+		border-right:1px #9c9cf3 solid;
+		font-size:1.2em;
+		padding-top:10px;
+		padding-bottom:12px;
+		color:#150015;
+	}
+	table{
+	border-collapse:collapse;
+	border-color:#b7badb;
+	font-size:12px;
+	}
+	table thead{
+		background-color:#cccee6;
+	}
+</style>
+
+</head>
+
+<body onload="load()">
+<div id="container">
+  <p><img src="images/top/title.jpg" alt="A&Wフーズ" width="1024" height="120" /></p>
+  <div id="navibar">
+  <ul>
+      <li><a href="../index.html">トップ</a></li>
+      <li><a href="jigyo_naiyo.html">事業内容</a></li>
+      <li><a href="web_system.html">ＷＥＢシステムでできること</a></li>
+      <li><a href="deverop_flow.html">開発・料金</a></li>
+      <li><a href="profile.html">プロフィール</a></li>
+      <li><a href="history.html">業務履歴</a></li>
+      <li><a href="access.html">お問い合わせ</a></li>
+  </ul>
+      </div>
+<div id="maincontent_top"></div>
+<div id="maincontent">
+	<center><div id="recruit">
+	  <span id="msgid2"></span>
+		<span id="today_" style="color:#f3c6c5"></span>
+  	
+  </div></center>
+	<center>
+
+
+  </center>
+  <br/><br/>
+  
+<div class="gaiyo">
+	<p>WEBシステムとは</p>
+	<div class="gaiyo2">
+			WEBシステムとはネットワーク上で機能するシステムのことです。
+			パソコンへのインストールは不要であり、Internet Explorerなどのブラウザで閲覧できます。
+			WEBシステムの代表的なものにはネットショップ、オークションサイト、銀行のネットバンキングなどがあります。
+	</div>
+</div>
+
+<div class="gaiyo">
+	<p>開発環境について</p>
+	<div class="gaiyo2">
+		開発環境は、PHP,AJAX,MySQLなどです。
+		レンタルサーバーの手配も行えます。レンタルサーバーは特に希望がないのでしたら「<a href="http://www.sakura.ne.jp/" target="brank">さくらサーバー</a>」を紹介します。
+		JAVA,JSPでの開発も可能ですが、PHP,AJAX,MySQLでの開発より、時間がかかります。
+	</div>
+</div>
+
+<div class="gaiyo">
+<p>何ができるのか</p>
+	<div class="gaiyo2">
+		WEBシステムで何ができるのかについては、以下の一覧を参考にしてください。
+	</div>
+</div>
+  
+  
+ <div class="komoku"> ネットショップの製作</div>
+	<div class="shosai">
+		お客様のニーズに合わせたネットショップを製作できます。<br />
+		開発環境はＰＨＰ、ＡＪＡＸ、ＭｙＳＱＬなどです。レンタルサーバーの手配も行えます。<br />
+	</div>	
+
+<div class="komoku">各種データ管理システム</div>
+	<div class="shosai">
+		データベースを利用した様々なデータ管理システムを製作できます。<br />
+		在庫管理システムや日報管理システムなど、業務に特化したシステムを作ることが可能です。<br />
+		<br />
+		<a href="../demo/data_io01/list.php" target="_blank">サンプル</a>
+	</div>	
+<div class="komoku">CEO対策</div>
+	<div class="shosai">
+	　googleによる検索で上位に表示されやすいWEBサイトを作成できます。<br />
+		<br />
+	</div>	
+	
+
+<div class="komoku">ＱＲコードを組み込む</div>
+	<div class="shosai">
+		スマートフォンをはじめとする携帯端末で読み込むことができるＱＲコード自動生成して表示できます。<br />
+		<br />
+		<a href="../demo/qr_code/smp_qr01.php" target="_blank">サンプル</a>
+	</div>	
+<div class="komoku">ＡＪＡＸを使ったデータ入力システム</div>
+	<div class="shosai">
+		画面遷移を必要としないデータ入力や、ちょっとしたギミックをＷＥＢページに追加できます。
+	</div>	
+
+<div class="komoku">グラフ表示</div>
+	<div class="shosai">
+		データをグラフ化して表示できます。<br />
+		<a href="../demo/g_chart/smp_gchart01.php" target="_blank">サンプル</a>
+		
+	</div>
+<div class="komoku">簡易なＷＥＢデザイン</div>
+	<div class="shosai">
+		ある程度デザインされた、ＷＥＢサイトを作成することができます。<br />
+		<br />
+		<a href="../demo/design01/sample.html" target="_blank">サンプル1</a><br />
+		<a href="../demo/design02/index.html" target="_blank">サンプル2</a><br />
+		<a href="../demo/design03/index.html" target="_blank">サンプル3</a><br />
+	</div>	
+
+<div class="komoku">Google Mapと連携</div>
+	<div class="shosai">
+		Goole MapをＷＥＢページに表示することができます。<br />
+		地図上の指定位置にマーカーをセット、クリックした位置を取得、入力した住所の地図を表示させることなどができます。<br />
+		
+		<br />
+		<a href="../demo/gmap/smp_gmap01.php" target="_blank">サンプル</a><br />
+	</div>
+<div class="komoku">WEB APIサービスを利用したシステム</div>
+	<div class="shosai">
+		一般公開されているWEB APIを利用して、さまざまなサービスを提供できます。<br />
+		代表的なＷＥＢ　ＡＰＩには以下のようなのがあります。<br />
+		<br />
+		
+		<table border="1" style="width:90%">
+		<caption>WEB APIサービス一覧</caption>
+			<thead><tr><th>WEB API名</th><th>説明</th></tr></thead>
+			<tbody>
+				<tr>
+					<td><a href="https://developers.google.com/maps/?hl=ja" target="_blank">Google Maps API </a></td>
+					<td>GoogleマップをWEBページに表示します。マーカー、吹き出しなどの機能も利用できます。</td>
+				</tr>
+				
+				<tr>
+					<td><a href="https://developers.google.com/earth/?hl=ja" target="_blank">Google Earth API</a></td>
+					<td>リアルな 3D デジタル地球儀をWEBページに埋め込むことができます。</td>
+				</tr>
+				
+				<tr>
+					<td><a href="https://developers.google.com/youtube/?hl=ja" target="_blank">YouTube API</a></td>
+					<td>YouTubeをWEBサイトに埋め込むほか、動画検索、アップロード、再生リストの作成が可能です。</td>
+				</tr>
+				
+				<tr>
+					<td><a href="http://developer.yahoo.co.jp/sitemap/" target="_blank">YAHOO! デベロッパーネットワーク</a></td>
+					<td>Yahooが提供しており、オークション、検索、震災関連情報、ニュース、テキスト解析など様々なWEB APIがあります。</td>
+				</tr>
+				
+				<tr>
+					<td><a href="http://aws.amazon.com/jp/" target="_blank">Amazon WEB サービス</a></td>
+					<td>アフィリエイト、商品検索、商品情報取得などができます。</td>
+				</tr>
+				
+				<tr>
+					<td><a href="http://img.simpleapi.net/" target="_blank">SimpleAPI</a></td>
+					<td>URLを指定すると、そのサイトのサムネイル画像を自動生成します。</td>
+				</tr>
+				
+				<tr>
+					<td><a href="http://webservice.rakuten.co.jp/document/" target="_blank">楽天WEBサービス</a></td>
+					<td>楽天商品検索、楽天商品ランキング、ブックス、オークション、トラベル施設、ゴルフ場検索、アフィリエイトなどがあります。</td>
+				</tr>
+				
+				<tr>
+					<td><a href="http://weather.livedoor.com/weather_hacks/webservice.html" target="_blank">ライブドア　お天気Webサービス</a></td>
+					<td>市町村単位で天気情報や、予報情報を取得できます。</td>
+				</tr>
+				
+				<tr>
+					<td><a href="http://www.flickr.com/services/api/" target="_blank">Flickr Services</a></td>
+					<td>写真共有サイト「Flickr」が提供するサービスで、写真検索、アップロードなどができます。</td>
+				</tr>
+				
+				<tr>
+					<td><a href="https://developers.google.com/translate/?hl=ja" target="_blank">Google Translate API</a></td>
+					<td>翻訳サービスです。多数の言語に翻訳できます。（現在は有料）</td>
+				</tr>
+				
+				<tr>
+					<td><a href="https://developers.google.com/chart/?hl=ja" target="_blank">Google Chart API</a></td>
+					<td>円グラフ、折れ線グラフ、棒グラフなどを生成します。</td>
+				</tr>
+				
+				<tr>
+					<td><a href="http://www.e-tsuri.info/" target="_blank">全国潮汐データWeb API</a></td>
+					<td>有名な港ごとに、潮汐情報を取得できます。</td>
+				</tr>
+				
+				<tr>
+					<td>Wikipedia API</td>
+					<td>Wikipedia内の情報を検索して取得できます。</td>
+				</tr>
+				
+				
+				
+			</tbody>
+		</table>
+		
+		<span style="color:#474223;font-size:0.8em">
+		※WEB APIサービスの利用はネット接続環境が必須です。またサービス提供サイトがサービス内容を変更、停止、有料化することがあります。
+		</span>
+
+ 	</div> 
+
+
+	
+<div class="komoku">ＷＥＢ　ＡＰＩサービスによるデータ配信</div>
+	<div class="shosai">
+		保有するデータを一般に提供するためのWEB APIサービスを作成できます。<br />
+ 	</div> 
+
+
+<div class="komoku">スマートフォン向けサイト</div>
+	<div class="shosai">
+		スマートフォン版のサイトを作成できます。ＰＣ版とほぼ同様のことができます。<br />
+ 	</div> 
+
+<div class="komoku">カレンダー</div>
+	<div class="shosai">
+		ブログのようなカレンダーを作成できます。<br />
+		<a href="../demo/calendar/smp_calendar01.php" target="_blank">サンプル</a><br />
+ 	</div> 
+
+<div class="komoku">PDFの作成</div>
+	<div class="shosai">
+		印刷に便利なＰＤＦを自動生成できます。<br />
+		<a href="../demo/pdf/smp_pdf01.php" target="_blank">サンプル</a><br />
+ 	</div> 
+
+<div class="komoku">CSVファイルの読み込みと書き出し</div>
+	<div class="shosai">
+		CSVファイルの読み込んでデータを表示したり、ＷＥＢ上のデータをＣＳＶファイルに書き込んでダウンロードすることが可能です。<br />
+		CSVファイルは現在かなり普及しているデータ交換用のフォーマットです。<br />
+		Ｅｘｃｅｌをはじめとする様々なソフトウェアで開くことができます。<br />
+ 	</div> 
+
+<div class="komoku">ソート可能なテーブル</div>
+	<div class="shosai">
+		テーブルの項目部分をクリックすると、その項目でデータを並べ替えるテーブルを作成できます。<br />
+		<a href="../demo/table_ex/sample01.htm" target="_blank">サンプル</a><br />
+ 	</div> 
+
+<div class="komoku">XML</div>
+	<div class="shosai">
+		XMLファイルの読み込んでデータを表示、ＷＥＢ上にXML形式でデータを表示、XML形式でデータをダウンロードすることが可能です。<br />
+		XMLファイルは現在かなり普及しているデータフォーマットです。RSSリーダーによるニュース配信やWEB APIサービスなどで使われます。<br />
+ 	</div> 
+
+
+<div class="komoku">JSON</div>
+	<div class="shosai">
+		JSON形式のデータを読み込んだり、表示したりできます。<br />
+		XMLと同様に良く使われるデータフォーマットです。<br />
+		WEB APIを使用する際、この形式でデータをやり取りすることが多くあります。<br />
+ 	</div> 
+
+<div class="komoku">セキュリティ</div>
+	<div class="shosai">
+		クロスサイトスクリプティング（XSS）、SQLインジェクションの対策を行います。<br />
+ 	</div> 
+	
+
+<div class="komoku">その他</div>
+	<div class="shosai">
+		上記にない技術にも、柔軟に対応いたします。<br />
+ 	</div> 
+
+  
+ 
+
+</div><!--maincontent-->
+
+
+<div id="maincontent_btm"></div>
+
+
+  <div id="footer">
+    <h6>Copyright K.Uehara</h6>
+  </div>
+  <p></p>
+  <p></p>
+  <p></p>
+</div>
+</body>
+</html>

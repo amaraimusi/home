@@ -1,0 +1,93 @@
+@charset "UTF-8";
+
+#title_logo{
+	width:100%;
+	height:120px;
+	background-image: url(/home/images/top/title3.jpg);
+	background-size:100% 100%;
+}
+
+#title_logo h2{
+	margin:0px;
+	padding:10px;
+	color:white;
+	text-align:right;
+}
+
+#aisatu{
+	font-size:1.5em;
+	padding-left:3%;
+	padding-right:3%;
+	margin-top:30px;
+	margin-bottom:30px;
+	line-height: 1.5em;
+	
+}
+
+
+#skills{
+	width:100%;
+	height:500px;
+	margin-left:auto;margin-right:auto;
+	background-image: url(/home/images/top/tbl_skill_back.png);
+	-moz-background-size:100% 100%;
+	background-size:100% 100%;
+	padding:20px;
+}
+#skills div{
+	width:25%;
+	height:50px;
+	float:left;
+}
+#skills div a{
+	color:#322f3e;
+}
+#skills div a:hover{
+	color:#de5145;
+}
+
+#info_links{
+	margin-top:40px;
+}
+
+#info_links a{
+	display:inline-block;
+	padding-left:20px;
+	padding-bottom:20px;
+	font-size:1.6em;
+}
+
+
+#topic_mid{
+	display:inline-block;
+	height:200px;
+}
+.topic02_date{
+	display:inline-block;
+	
+}
+
+#little_links{
+	margin-top:40px;
+}
+#little_links a{
+	display:inline-block;
+	padding-left:20px;
+	padding-bottom:20px;
+	font-size:0.8em;
+}
+
+
+#footer{
+	width:100%;
+	height:120px;
+	background-image: url(/home/images/top/footer.jpg);
+	background-size:100% 100%;
+}
+
+#footer h6{
+	margin:0px;
+	padding-top:80px;
+	color:white;
+	text-align:center;
+}

@@ -1,0 +1,155 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>システム開発のお問い合わせ | システム開発ならワクガンスソフト</title><link rel='shortcut icon' href='/home/images/favicon.ico' />
+<link href="common.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery.js" charset="utf-8"></script>
+<script type="text/javascript" src="js/date_ex.js" charset="utf-8"></script>
+<script type="text/javascript" src="js/common_home.js" charset="utf-8"></script>
+<script type="text/javascript">
+
+
+	function load(){
+		//☆マークを点滅させる。
+		g_blink01("msgid2");
+	
+		//本日日付を表示する。
+		todayShow();
+		
+	}
+	
+	function todayShow(){
+		var d=new Date();
+		d=DateFormat(d,'yyyy/mm/dd');
+		$("#today_").html(d);
+	}
+
+	//メールアドレス生成（メルアド収集ソフト対策】
+	function createMailAddress(){
+		  var a="amara";
+		  var b="imusi";
+		  var mailAddress=a+b+"@gmail.com";
+		  return mailAddress;
+	}
+	
+	function sendMail(){
+
+	  var mailAddress=createMailAddress();
+	  var mailto = "mailto:"+mailAddress;
+
+	  var matter=$('#matter option:selected').val();
+	  mailto = mailto + 
+	    "?subject="+matter+"&body=" + matter + "%0D%0A";
+
+		//新しいウィンドウで開く
+	  var w=window.open();
+	  w.location.href=mailto;
+	  
+	}
+
+	//メーラーを起動する。
+	function sendMailBlank(){
+		  var mailAddress=createMailAddress();
+		  var mailto = "mailto:"+mailAddress;
+
+			//新しいウィンドウで開く
+		  var w=window.open();
+		  w.location.href=mailto;
+	}
+</script>
+<style type="text/css">
+
+
+	
+	.komoku{
+		width:660px;
+		height:25px;
+		border-left:10px #f4b115 double;
+		border-bottom:1px #f4b115 solid;
+		margin-top:40px;
+		margin-left:40px;
+		padding-left:10px;
+		font-size:30px;
+		color:#000020;
+		padding-top:7px;
+		font-family:"ヒラギノ明朝 Pro W6", "Hiragino Mincho Pro", "HGS明朝E", "ＭＳ Ｐ明朝", serif;
+	}
+	
+	.shosai{
+		width:659px;
+		height:auto;
+		background-color:#e4f1ef;
+		margin-top:12x;
+		margin-left:60px;
+		border-bottom:1px #f4b115 solid;
+		border-right:1px #f4b115 solid;
+		font-size:1.2em;
+		padding-top:10px;
+		padding-bottom:12px;
+		color:#150015;
+	}
+</style>
+
+</head>
+
+<body onload="load()">
+<div id="container">
+  <p><img src="images/top/title.jpg" alt="A&Wフーズ" width="1024" height="120" /></p>
+  <div id="navibar">
+  <ul>
+      <li><a href="../index.html">トップ</a></li>
+      <li><a href="jigyo_naiyo.html">事業内容</a></li>
+      <li><a href="web_system.html">ＷＥＢシステムでできること</a></li>
+      <li><a href="deverop_flow.html">開発・料金</a></li>
+      <li><a href="profile.html">プロフィール</a></li>
+      <li><a href="history.html">業務履歴</a></li>
+      <li><a href="access.html">お問い合わせ</a></li>
+  </ul>
+      </div>
+<div id="maincontent_top"></div>
+<div id="maincontent">
+	<center><div id="recruit">
+	  <span id="msgid2"></span>
+		<span id="today_" style="color:#f3c6c5"></span>
+  	
+  </div></center>
+	<center>
+
+	  <br/><br/>
+
+  </center>
+
+
+	<div style="padding-left:200px;padding-top:80px;padding-bottom:100px">
+		<select id="matter">
+			<option value="WEBサイト製作の件">WEBサイト製作の件</option>
+			<option value="業務用ツール製作【VBA】の件">業務用ツール製作【VBA】の件</option>
+			<option value="ソフトウェア製作【C#】の件">ソフトウェア製作【C#】の件</option>
+			<option value="　">その他のお問い合わせ</option>
+		</select>
+		<input type="button" onclick="sendMail()" value="お問い合わせ" />
+		<br /><br />
+		<a href="#" onclick="sendMailBlank()"><img src="images/mail.png" /></a>
+	</div>
+	
+	
+
+  
+ 
+
+</div><!--maincontent-->
+
+
+<div id="maincontent_btm"></div>
+
+
+  <div id="footer">
+    <h6>Copyright K.Uehara</h6>
+  </div>
+  <p></p>
+  <p></p>
+  <p></p>
+</div>
+</body>
+</html>
