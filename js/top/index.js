@@ -14,6 +14,9 @@ jQuery(() =>{
 	
 	// プログラミング歴の算出して表示
 	programmingHistory();
+	
+	// メールアドレスを組み立て表示
+	buildMailaddr();
 })
 
 
@@ -33,4 +36,16 @@ function programmingHistory(){
 	var his_year = now_year - start_year;
 	jQuery('#his_year').html(his_year);
 	
+}
+
+
+/**
+ * メールアドレスを組み立て表示
+ */
+function buildMailaddr(){
+	//
+	window.setTimeout(()=>{
+		var mail_str = 'amaraimusi' + '@' + 'gmail.com';
+		jQuery('#maile_addr').html(mail_str);
+	}, 1500);
 }
