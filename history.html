@@ -15,6 +15,7 @@
 	<script src="/note_prg/js/bootstrap.min.js"></script>
 	<script src="/note_prg/js/livipage.js"></script>
 	<script src="/note_prg/js/ImgCompactK.js"></script>
+	<script src="js/history.js"></script>
 	
 	<style>
 	#tbl1{
@@ -33,6 +34,26 @@
 	#tbl1 thead .clm_note{
 		width:40%;
 	}
+	
+	
+	#tbl1 thead tr th:nth-of-type(2) {
+		display:none;
+	}
+	#tbl1 tbody tr td:nth-of-type(2) {
+		display:none;
+	}
+	#tbl1 thead tr th:nth-of-type(3) {
+		display:none;
+	}
+	#tbl1 tbody tr td:nth-of-type(3) {
+		display:none;
+	}
+	#tbl1 thead tr th:nth-of-type(7) {
+		display:none;
+	}
+	#tbl1 tbody tr td:nth-of-type(7) {
+		display:none;
+	}
 	</style>
 </head>
 <body>
@@ -40,10 +61,12 @@
 <div class="container">
 
 
-
+<input type="button" value="詳細表示" onclick="changeClms()" class="btn btn-default btn-xs" title="開始月、終了月、場所の列を表示する。" />
 <table id="tbl1" class="table table-condensed ">
 	<thead>
 		<tr><th class="clm_jiki">時期</th>
+		<th>開始月</th>
+		<th>終了月</th>
 		<th class="clm_system_name">システム</th>
 		<th>開発言語/DB/技術</th>
 		<th class="clm_note">説明</th>
@@ -53,6 +76,8 @@
 	
 		<tr>
 			<td>2018</td>
+			<td>2018-9</td>
+			<td>2018-9</td>
 			<td><a href="/okianim/">沖縄の動物</a></td>
 			<td>JavaScript, Cake PHP, MySQL</td>
 			<td>
@@ -66,6 +91,8 @@
 	
 		<tr>
 			<td>2018</td>
+			<td>2018-9</td>
+			<td>2018-9</td>
 			<td><a href="/cb_red_book/">レッドデータブック</a></td>
 			<td>JavaScript, Cake PHP, MySQL</td>
 			<td>
@@ -79,6 +106,8 @@
 	
 		<tr>
 			<td>2018</td>
+			<td>2018-2</td>
+			<td>2018-9</td>
 			<td><a href="/cake_demo/">原本WEBシステム</a></td>
 			<td>JavaScript, Cake PHP, MySQL</td>
 			<td>
@@ -95,10 +124,12 @@
 	
 		<tr>
 			<td>2017-2018</td>
-			<td>SEOシステム</td>
+			<td>2017-11</td>
+			<td>2018-1</td>
+			<td>定時バッチ処理システム</td>
 			<td>PHP, MySQL</td>
 			<td>
-				既存のシステムを改修。クーロンによるバッチ処理を開発する。<br>
+				既存のバッチ処理システムを改修。クーロンによるバッチ処理を開発する。<br>
 				期間は2,3ヵ月間<br>
 			</td>
 			<td>那覇</td>
@@ -106,6 +137,8 @@
 	
 		<tr>
 			<td>2017</td>
+			<td>2017-8</td>
+			<td>2017-10</td>
 			<td>ゲーム開発ツール その2</td>
 			<td>Cake PHP, JavaScript, MySQL, SPA</td>
 			<td>
@@ -118,6 +151,8 @@
 
 		<tr>
 			<td>2017</td>
+			<td>2017-4</td>
+			<td>2017-9</td>
 			<td>Word Pressのプラグイン開発</td>
 			<td>Word Press, JavaScript, D3.js</td>
 			<td>
@@ -130,6 +165,8 @@
 		
 		<tr>
 			<td>2016-2017</td>
+			<td>2016-9</td>
+			<td>2017-4</td>
 			<td>ゲーム開発ツール</td>
 			<td>Cake PHP, JavaScript, MySQL, SPA</td>
 			<td>
@@ -144,6 +181,8 @@
 		
 		<tr>
 			<td>2016</td>
+			<td>2016-8</td>
+			<td>2016-9</td>
 			<td>Gitの調査依頼</td>
 			<td>Git</td>
 			<td>
@@ -155,6 +194,8 @@
 		
 		<tr>
 			<td>2016</td>
+			<td>2016-8</td>
+			<td>2016-8</td>
 			<td>ショッピングサイトの見本</td>
 			<td>Cake PHP, JavaScript, MySQL</td>
 			<td>
@@ -167,6 +208,8 @@
 		
 		<tr>
 			<td>2016</td>
+			<td>2016-7</td>
+			<td>2016-7</td>
 			<td>SOAPとRESTの調査依頼</td>
 			<td>JavaScript, PHP</td>
 			<td>
@@ -180,6 +223,8 @@
 		
 		<tr>
 			<td>2016</td>
+			<td>2016-7</td>
+			<td>2016-7</td>
 			<td>Cake PHP3の調査依頼</td>
 			<td>Cake PHP3</td>
 			<td>
@@ -192,6 +237,8 @@
 		
 		<tr>
 			<td>2016</td>
+			<td>2016-6</td>
+			<td>2016-6</td>
 			<td>PHP Unitの調査依頼</td>
 			<td>PHP Unit</td>
 			<td>
@@ -203,6 +250,8 @@
 		
 		<tr>
 			<td>2016</td>
+			<td>2016-6</td>
+			<td>2016-6</td>
 			<td>SendGridの調査依頼</td>
 			<td>SendGrid</td>
 			<td>
@@ -213,6 +262,8 @@
 		</tr>
 		<tr>
 			<td>2016</td>
+			<td>2016-3</td>
+			<td>2016-5</td>
 			<td>予約サイト/予約システム(その2)</td>
 			<td>Cake PHP, JavaScript, MySQL, UML</td>
 			<td>
@@ -224,6 +275,8 @@
 	
 		<tr>
 			<td>2016</td>
+			<td>2016-1</td>
+			<td>2016-3</td>
 			<td>ネットショップ売上管理システム(仕様調整)</td>
 			<td>Cake PHP, JavaScript, MySQL, UML</td>
 			<td>
@@ -236,6 +289,8 @@
 	
 		<tr>
 			<td>2015-2016</td>
+			<td>2015-9</td>
+			<td>2016-1</td>
 			<td>チャットシステム</td>
 			<td>Cake PHP, JavaScript, MySQL, UML</td>
 			<td>
@@ -249,6 +304,8 @@
 	
 		<tr>
 			<td>2015</td>
+			<td>2015-4</td>
+			<td>2015-9</td>
 			<td>ネットショップ売上管理システム</td>
 			<td>Cake PHP, JavaScript, MySQL, UML</td>
 			<td>
@@ -262,6 +319,8 @@
 		
 		<tr>
 			<td>2014-2015</td>
+			<td>2014-7</td>
+			<td>2015-3</td>
 			<td>予約サイト/予約システム</td>
 			<td>Cake PHP, JavaScript, MySQL, UML</td>
 			<td>
@@ -274,10 +333,12 @@
 		
 		<tr>
 			<td>2014</td>
-			<td>アプリの売上管理システム</td>
+			<td>2014-5</td>
+			<td>2014-6</td>
+			<td>広告売上管理システム</td>
 			<td>Cake PHP, JavaScript, MySQL, UML</td>
 			<td>
-				アプリの広告売上を管理するシステム。
+				広告売上を管理するシステム。
 				CSVファイルの読み込み、集計、グラフ表示、売上データダウンロードなどの機能を備える。<br>
 				設計からリリースまで担当。<br>
 				期間は約2か月間<br>
@@ -287,6 +348,8 @@
 		
 		<tr>
 			<td>2014</td>
+			<td>2014-4</td>
+			<td>2014-5</td>
 			<td>商品分析システム</td>
 			<td>Cake PHP, JavaScript, MySQL, UML</td>
 			<td>
@@ -299,6 +362,8 @@
 		</tr>
 		<tr>
 			<td>2014</td>
+			<td>2014-1</td>
+			<td>2014-1</td>
 			<td>絵画工房サイト</td>
 			<td>HTML, JQuery, GIMP</td>
 			<td>
@@ -310,20 +375,25 @@
 		</tr>
 		
 		<tr>
-			<td>2013-現在</td>
+			<td>2013-2014</td>
+			<td>2012-7</td>
+			<td>2014-3</td>
 			<td>農業管理システム</td>
 			<td>HTML5, JavaScript, PHP, CakePHP, AJAX, MySQL, Excel VBA</td>
 			<td>
-				スマホ、PCから、農業記録を行うシステム。<br>
-				兼業で農業を始めたのでその記録用。<br>
-				随時バージョンアップを重ねており、2018年現在も修正中。<br>
-				当初はExcel VBAで開発していたが、PHP(フレームワークなし) → CakePHP → JavaScript(SPA)と変化を続けている。<br>
+				農業をはじめたので立ち上げた案件。<br>
+				スマホ、PCから、農業記録を行う。<br>
+				当初はExcel VBAで開発していたが、PHP(フレームワークなし) → CakePHP → JavaScript(SPA)と変化を続けている。
+				農業はうまく行かなかったが、このシステムは後のWEBシステムに大きな影響を与えた。
+				現在はリニューアルのため一時停止中。<br>
 			</td>
 			<td>沖縄（今帰仁）</td>
 		</tr>
 		
 		<tr>
 			<td>2013</td>
+			<td>2013-7</td>
+			<td>2013-10</td>
 			<td>Amazonデータ取得システム</td>
 			<td>php, AJAX, C#, Access</td>
 			<td>
@@ -337,14 +407,15 @@
 		
 		<tr>
 			<td>2013</td>
-			<td>地方自治体のシステム</td>
+			<td>2013-5</td>
+			<td>2013-6</td>
+			<td>世帯管理システム</td>
 			<td>Java, Oracle</td>
 			<td>
-				世帯管理システム。<br>
-				既存システムの改修案件。<br>
+				元は韓国でオフショア開発されたシステム。
 				様々な改修、機能追加を行う。<br>
 				バッチ処理による自動化処理にも対応。<br>
-				個人事業として受注した案件。<br>
+				個人事業として依頼を受けた案件。<br>
 				期間は1~2か月間。<br>
 			</td>
 			<td>沖縄（出向/常駐）</td>
@@ -352,28 +423,35 @@
 		
 		<tr>
 			<td>2013</td>
+			<td>2013-1</td>
+			<td>2013-3</td>
 			<td>運送業システム</td>
 			<td>Html5, AppMobi, JQuery.mobile, jQMobi, JavaScript</td>
 			<td>
 				スマートフォン用システム。Android,iOSに対応し、バーコード読取機能やサーバー側のDBとデータ通信を行う機能を備える。<br>
 				個人事業として受注した案件。<br>
+				期間は2ヵ月間ほど。<br>
 			</td>
 			<td>沖縄（出向/在宅）</td>
 		</tr>
 		
 		<tr>
 			<td>2012-</td>
+			<td>2012-4</td>
+			<td>2012-12</td>
 			<td>Androidゲームアプリ</td>
 			<td>Android, Sqlite, Java, C#</td>
 			<td>
 				シミュレーション系のゲーム。<br>
-				開発停止中・・・<br>
+				他案件と並行して進めていたが現在は開発停止中・・・。<br>
 			</td>
 			<td>沖縄（自宅）</td>
 		</tr>
 		
 		<tr>
 			<td>2012</td>
+			<td>2012-7</td>
+			<td>2012-12</td>
 			<td>各種デモ用サンプル</td>
 			<td>HTML5, MySQL, PHP, AJAX</td>
 			<td>
@@ -386,6 +464,8 @@
 		
 		<tr>
 			<td>2012</td>
+			<td>2012-6</td>
+			<td>2012-7</td>
 			<td>デモ用デザインページ</td>
 			<td>HTML, CSS, GIMP</td>
 			<td>
@@ -398,6 +478,8 @@
 		
 		<tr>
 			<td>2012</td>
+			<td>2012-4</td>
+			<td>2012-5</td>
 			<td>各種Excel VBAツール</td>
 			<td>Excel VBA</td>
 			<td>
@@ -411,19 +493,23 @@
 		
 		<tr>
 			<td>2012</td>
+			<td>2012-1</td>
+			<td>2012-3</td>
 			<td>道路管理システム</td>
 			<td>Javaアプレット, ACCESS</td>
 			<td>
 				道路と地図のシステム。<br>
 				Javaアプレットの危険性を痛感した案件。(とにかく遅い)<br>
 				ヘルプでチームに加わる。テストを担当。<br>
-				期間は2～3ヵ月。<br>
+				期間は2～3ヵ月。(他案件と並行して作業する)<br>
 			</td>
 			<td>愛知県（名古屋）</td>
 		</tr>
 		
 		<tr>
 			<td>2012</td>
+			<td>2012-1</td>
+			<td>2012-1</td>
 			<td>PDF連結ツール</td>
 			<td>Excel VBA</td>
 			<td>
@@ -435,19 +521,23 @@
 		
 		<tr>
 			<td>2012</td>
+			<td>2012-1</td>
+			<td>2012-2</td>
 			<td>観光情報システム（別の自治体）</td>
 			<td>PHP, MySQL, AJAX, UML</td>
 			<td>
 				既存の観光情報システムを別の顧客向けに改造。<br>
 				少人数による改造案件。<br>
 				プログラミング・テストを担当。（プログラマーは自分ひとり）<br>
-				期間は1～2ヵ月間。
+				期間は1～2ヵ月間。(他案件と平行して作業する)
 			</td>
 			<td>愛知県（名古屋）</td>
 		</tr>
 		
 		<tr>
 			<td>2011</td>
+			<td>2011-9</td>
+			<td>2011-12</td>
 			<td>遺跡調査システム</td>
 			<td>PHP, Smarty, MySQL</td>
 			<td>
@@ -461,10 +551,12 @@
 		
 		<tr>
 			<td>2011</td>
+			<td>2011-6</td>
+			<td>2011-9</td>
 			<td>備品管理システム</td>
 			<td>PHP, MySQL, Android, UML</td>
 			<td>
-				社内で保有する備品を管理するシステム。減価償却計算機能なども備える。<br>
+				保有する備品を管理するシステム。減価償却計算機能なども備える。<br>
 				少人数による案件で、プログラミング、テストを担当。（プログラマーは自分ひとり）<br>
 				期間は2~3か月くらい。
 			</td>
@@ -474,6 +566,8 @@
 			
 		<tr>
 			<td>2011</td>
+			<td>2011-3</td>
+			<td>2011-6</td>
 			<td>勤務シフト生成補助ツール</td>
 			<td>Excel VBA, ACCESS,UML</td>
 			<td>
@@ -487,6 +581,8 @@
 		
 		<tr>
 			<td>2010-2011</td>
+			<td>2010-11</td>
+			<td>2011-3</td>
 			<td>夜勤シフト生成補助ツール</td>
 			<td>Excel VBA, ACCESS, UML</td>
 			<td>
@@ -500,48 +596,68 @@
 		
 		<tr>
 			<td>2010-2011</td>
+			<td>2010-8</td>
+			<td>2011-2</td>
 			<td>観光情報システム</td>
 			<td>PHP, MySQL, AJAX, UML</td>
 			<td>
-				google mapを活用した,
-				某自治体の観光情報システム。<br>
+				google mapを活用した観光情報システム。<br>
 				一時期流行していた仮想現実アプリと連動していた。（Layerというアプリ）<br>
 				少人数による新規案件。<br>
 				プログラミング・テストを担当。（プログラマーは自分ひとり）<br>
-				期間は３ヶ月～半年くらい。<br>
-				名古屋で働いていた時の案件。<br>
+				期間は３ヶ月～半年くらい。(他案件と平行しての開発であるため)<br>
 			</td>
 			<td>愛知県（名古屋）</td>
 		</tr>
 		
 		<tr>
 			<td>2010</td>
+			<td>2010-7</td>
+			<td>2010-8</td>
 			<td>遺跡出土品画像編集/遺跡地図マッピング</td>
 			<td>Photoshop, Excel VBA, UWSC</td>
 			<td>
 				遺跡出土品の画像編集を行う。
 				その際、Excel VBAやUWSCで作業短縮プログラムを作成する。<br>
 				また、遺跡地図をGoogle Mapにマッピングするプログラムも作成する。<br>
-				ITとは関係がない、遺跡の運び出し作業もする。<br>
-				期間は約一ヵ月月ほど。その後、システム開発課へ部署移動。<br>
+				ITとは関係がない遺跡の運び出し作業もする。<br>
+				期間は約一ヵ月間ほど。その後、システム開発課へ部署移動。<br>
 			</td>
 			<td>愛知県（名古屋）</td>
 		</tr>
 		
 		<tr>
-			<td>2009-2010</td>
+			<td>2010</td>
+			<td>2010-6</td>
+			<td>2010-6</td>
+			<td>UMTP　UMLモデリング技能認定　L1-T2</td>
+			<td>UML</td>
+			<td>
+				本土で働くことにしたため、その前に一つ資格を取ることにした。<br>
+				当時、設計の技術がもっとも必要だと感じていたのでUMLを選択する。<br>
+			</td>
+			<td>沖縄県（北谷町）</td>
+		</tr>
+		
+		<tr>
+			<td>2009</td>
+			<td>2009-1</td>
+			<td>2009-10</td>
 			<td>各種デモ用ＷＥＢシステム</td>
 			<td>Java（Strut), MySQL, Excel VBA, Ajax, CSS(WEBデザイン）, サーバー構築等</td>
 			<td>
-				ショッピングサイト、在庫管理、社員管理システム、ＷＥＢサイト自動生成ツールを作成。<br>
-				期間は半年～１年くらい。<br>
-				個人事業の立ち上げのための案件。リーマンショックと重なり仕事がなく中断する。<br>
+				個人事業の立ち上げのために見本WEBシステムを開発した。<br>
+				ショッピングサイト、在庫管理、社員管理システム、ＷＥＢサイト自動生成ツールなどを作成。<br>
+				期間は10ヵ月間くらい。<br>
+				しかし、リーマンショックなどと重なり仕事がなく中断。やむをえずコンビニでバイトする。<br>
 			</td>
 			<td>沖縄（北谷町）</td>
 		</tr>
 		
 		<tr>
 			<td>2006-2008</td>
+			<td>2006-7</td>
+			<td>2008-12</td>
 			<td>株式情報システム</td>
 			<td>VB6, VB.Net(2003), VB2005, VB2008, Access, SQLServer</td>
 			<td>
@@ -549,31 +665,35 @@
 				会社を辞め、株式で生活しようと弟と共に立ち上げた案件。<br>
 				スクレイピング機能があり、定期的に株式情報を自動取得していた。<br>
 				要件定義から保守まですべて担当。<br>
-				期間は１～２年くらい。<br>
+				スーパーでバイトしながら１～２年くらい行った。。<br>
 			</td>
 			<td>沖縄（自宅）</td>
 		</tr>
 		
 		<tr>
 			<td>2005-2006</td>
+			<td>2005-9</td>
+			<td>2006-6</td>
 			<td>先物取引システム</td>
 			<td>Java(Weblogic), Oracle</td>
 			<td>
-				大手銀行のシステムで株式取引、先物取引などの分析を行うツール。<br>
-				大規模な案件であり、改修作業。<br>
+				株式取引、先物取引などの分析を行うツール。<br>
+				大規模な案件。<br>
 				詳細設計、プログラミング、テストを担当。Excel VBAにて補助的なツールも作成。<br>
 				複雑なSQLの作成や、小規模なバッチ処理を作成した。<br>
-				期間は７ヶ月間。
+				期間は9ヶ月間。
 			</td>
 			<td>東京（出向先の会社内）</td>
 		</tr>
 		<tr>
 			<td>2005</td>
+			<td>2005-7</td>
+			<td>2005-8</td>
 			<td>営業管理システム</td>
 			<td>Java(Struts), DB2, JavaScript</td>
 			<td>
 				某大手銀行の営業活動管理を行うシステム。<br>
-				小規模な新規案件。<br>
+				小規模な新規案件であり、
 				詳細設計、プログラミング、テストを担当する。<br>
 				期間は２ヶ月間<br>
 			</td>
@@ -581,13 +701,14 @@
 		</tr>
 		<tr>
 			<td>2005</td>
+			<td>2005-4</td>
+			<td>2005-6</td>
 			<td>回線事業システム</td>
 			<td>Java(Servlet), DB2, JavaScript</td>
 			<td>
-				大手通信業者の通信回線に関する見積もりシステム。<br>
-				中規模な案件であり、今回は改修作業。<br>
+				通信業者の通信回線に関する見積もりシステム。<br>
+				中規模な案件であり、今回は改修作業を行う。<br>
 				詳細設計、コーティング、テストを担当。<br>
-				入力項目が膨大かつ整理されておらず、テスト体制もまずいという、今考えると問題が多い案件。<br>
 				期間は２ヶ月間。<br>
 				出向先の指揮命令下において勤務。<br>
 			</td>
@@ -596,14 +717,16 @@
 		
 		<tr>
 			<td>2005</td>
+			<td>2005-2</td>
+			<td>2005-3</td>
 			<td>保険料算出システム</td>
 			<td>
 				Java(Servlet), Oracle（ストアドプロシージャ）, JavaScript
 			</td>
 			<td>
-				大手保険会社の保険料算出システム。<br>
+				保険会社の保険料算出システム。<br>
 				多人数、大規模な改修作業案件。<br>
-				プログラミング、テストを担当する。Excel VBAでテストツールの作成も行った。<br>
+				プログラミングも行ったが、主にテストを担当する。テストの際、Excel VBAでテスト支援ツールを作成した。<br>
 				期間は２ヶ月間。<br>
 				出向先の指揮命令下において勤務。<br>
 			</td>
@@ -612,10 +735,12 @@
 		
 		<tr>
 			<td>2005</td>
+			<td>2005-1</td>
+			<td>2005-1</td>
 			<td>社内管理システム</td>
 			<td>VB.NET, SQLServer</td>
 			<td>
-				会議予約、人員管理など多機能なOS依存システム。<br>
+				会議予約、人員管理など多機能なシステム。<br>
 				複数人数による新規案件。<br>
 				テストを担当する。<br>
 				期間は一月ほど。<br>
@@ -625,28 +750,42 @@
 		
 		<tr>
 			<td>2004-2005</td>
+			<td>2004-12 </td>
+			<td>2005-1</td>
 			<td>案件管理システム</td>
-			<td>Java(Servlet), Access, SQLServer, JavaScript</td>
+			<td>Java(Servlet), Eclipse, Access, SQLServer, JavaScript</td>
 			<td>
 				IT業界に入ってから初めての案件。<br>
 				社内の人員が今どの案件に携わっているか管理するWEBシステム。<br>
-				新社員だけの少人数チームによる新規の案件。<br>
+				新社員だけのチームよる研修的な案件。<br>
 				設計全般、プログラミング、テストを担当する。<br>
 				期間は一月ほど。<br>
-				おそらく研修的な意味合いを持つ案件だったと思われる。<br>
 			</td>
 			<td>沖縄(那覇)</td>
 		</tr>
 		<tr>
-			<td>2001 - 2004</td>
+			<td>2002 - 2004</td>
+			<td>2002-2</td>
+			<td>2004-11</td>
 			<td>ゲーム開発</td>
-			<td>Excel VBA, VB6, Java, DirectX, Access, C++</td>
+			<td>Excel VBA, VB6, Java, VB.NET, DirectX, Access, C++, UML</td>
 			<td>
 				ゲーム開発で生計をたてようといろいろ奮闘していた時期。<br>
-				低い技術力や物事の進め方の悪さもあいまって、ほとんどのプロジェクトが未完成のまま終わった。<br>
+				低い技術力や物事の進め方の悪さもあいまって、ほとんどのプロジェクトが未完成のまま終わったが、
 				この時期にオブジェクト指向、UML、データベースなどの技術を習得。<br>
 			</td>
 			<td>沖縄（自宅）</td>
+		</tr>
+		<tr>
+			<td>1997</td>
+			<td>1997-5</td>
+			<td>1997-5</td>
+			<td>情報技術検定2級</td>
+			<td>Basic</td>
+			<td>
+				学生時代にプログラムの基礎とBasicを学ぶ。その時取得した検定。
+			</td>
+			<td>沖縄</td>
 		</tr>
 	</tbody>
 </table>
