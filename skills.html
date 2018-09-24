@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<meta name="google" content="notranslate" />
+	 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>スキル | ワクガンス</title>
+	<link rel='shortcut icon' href='/home/images/favicon.ico' />
+	
+	<link href="/note_prg/css/bootstrap.min.css" rel="stylesheet">
+	<link href="/note_prg/css/common2.css" rel="stylesheet">
+
+	<script src="/note_prg/js/jquery3.js"></script>	<!-- jquery-3.3.1.min.js -->
+	<script src="/note_prg/js/bootstrap.min.js"></script>
+	<script src="/note_prg/js/livipage.js"></script>
+	<script src="/note_prg/js/ImgCompactK.js"></script>
+	<script src="js/skills.js"></script>
+	
+	<style>
+
+	#tbl1 thead tr th:nth-of-type(6) {
+		display:none;
+	}
+	#tbl1 tbody tr td:nth-of-type(6) {
+		display:none;
+	}
+	.star{
+		color:#ffcd43;
+	}
+	</style>
+</head>
+<body>
+<div id="header" ><h1>スキル | ワクガンス</h1></div>
+<div class="container">
+
+
+
+
+
+<input type="button" value="星評価（経験/知識）について" class="btn btn-info btn-sm" onclick="jQuery('#star_note').toggle(300);" />
+<table id="star_note" class="tbl2" style="display:none">
+	<tbody>
+		<tr><td><span class="star">★</span>10</td><td>現在よく使っている。(※全く使わない機能もある)</td></tr>
+		<tr><td><span class="star">★</span>9</td><td>よく使うが最近覚えたばかり。 / よく使うが知識に偏りがある。</td></tr>
+		<tr><td><span class="star">★</span>8</td><td>過去によく使っていた。</td></tr>
+		<tr><td><span class="star">★</span>7</td><td>知識はあるが1つの案件でしか使ったことがない。</td></tr>
+		<tr><td><span class="star">★</span>6</td><td>知識があり過去に少し実用経験がある。</td></tr>
+		<tr><td><span class="star">★</span>5</td><td>基礎知識があり実用経験がある。</td></tr>
+		<tr><td><span class="star">★</span>4</td><td>基礎知識があり実用経験が少しある。</td></tr>
+		<tr><td><span class="star">★</span>3</td><td>基礎知識はあるが実用経験がない。</td></tr>
+		<tr><td><span class="star">★</span>2</td><td>注目している技術であり学習中。</td></tr>
+		<tr><td><span class="star">★</span>1</td><td>過去に少し実用経験があるがかなり忘れかけている。 / 少しだけ知っている</td></tr>
+	</tbody>
+</table><br><br>
+<aside>
+	※経験年数は習得年から最後に使用した年までの年数です。
+	ブランク期間はある程度除いています。当然ながら使用頻度はまちまちですのでおおよその年数になります。<br>
+</aside>
+
+<h2>スキル一覧</h2>
+<table id="tbl1" class="table">
+  <thead>
+    <tr>
+      <th>スキル</th>
+      <th>経験/知識</th>
+      <th>経験年数(～年数)</th>
+      <th>習得年</th>
+      <th>最終使用年</th>
+      <th>過去年数</th>
+      <th>覚書</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>JavaScript</td>
+      <td>10</td>
+      <td></td>
+      <td>2004</td>
+      <td></td>
+      <td></td>
+      <td>
+        <a href="/note_prg/JavaScript/">JavaScriptの覚書</a>
+      </td>
+    </tr>
+    <tr>
+      <td>MySQL</td>
+      <td>10</td>
+      <td></td>
+      <td>2004</td>
+      <td></td>
+      <td></td>
+      <td>
+        <a href="/note_prg/mysql/">MySQLの覚書</a>
+      </td>
+    </tr>
+    <tr>
+      <td>デザインパターン</td>
+      <td>10</td>
+      <td></td>
+      <td>2006</td>
+      <td></td>
+      <td></td>
+      <td>
+        <a href="/note_prg/design_pattern/">デザインパターンの覚書</a>
+      </td>
+    </tr>
+    <tr>
+      <td>HTML5</td>
+      <td>10</td>
+      <td></td>
+      <td>2010</td>
+      <td></td>
+      <td></td>
+      <td>
+        <a href="/note_prg/html/#html5">HTML5の覚書</a>
+      </td>
+    </tr>
+    <tr>
+      <td>PHP</td>
+      <td>10</td>
+      <td></td>
+      <td>2010</td>
+      <td></td>
+      <td></td>
+      <td>
+        <a href="/note_prg/php/">PHPの覚書</a>
+      </td>
+    </tr>
+    <tr>
+      <td>jQuery</td>
+      <td>10</td>
+      <td></td>
+      <td>2011</td>
+      <td></td>
+      <td></td>
+      <td>
+        <a href="/note_prg/JavaScript/#jquery_note">jQueryの覚書</a>
+      </td>
+    </tr>
+    <tr>
+      <td>Cake PHP2</td>
+      <td>10</td>
+      <td></td>
+      <td>2014</td>
+      <td></td>
+      <td></td>
+      <td>
+        <a href="/note_prg/cakephp/">CakePHPの覚書</a>
+      </td>
+    </tr>
+    <tr>
+      <td>Bootstrap</td>
+      <td>10</td>
+      <td></td>
+      <td>2014</td>
+      <td></td>
+      <td></td>
+      <td>
+        <a href="/note_prg/css_note/#bootstrap_index">Bootstrapの覚書</a>
+      </td>
+    </tr>
+    <tr>
+      <td>Apache</td>
+      <td>9</td>
+      <td></td>
+      <td>2004</td>
+      <td></td>
+      <td></td>
+      <td>
+        <a href="/note_prg/html/#apache">Apacheの覚書</a>
+      </td>
+    </tr>
+    <tr>
+      <td>UML</td>
+      <td>9</td>
+      <td></td>
+      <td>2004</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Git</td>
+      <td>9</td>
+      <td></td>
+      <td>2016</td>
+      <td></td>
+      <td></td>
+      <td>
+        <a href="/note_prg/git/github_note.html">GitとGitHubの覚書</a>
+      </td>
+    </tr>
+    <tr>
+      <td>SVG</td>
+      <td>9</td>
+      <td></td>
+      <td>2016</td>
+      <td>2017</td>
+      <td>1</td>
+      <td>
+        <a href="/note_prg/html/#svg">SVGの覚書</a>
+      </td>
+    </tr>
+    <tr>
+      <td>VBA</td>
+      <td>8</td>
+      <td></td>
+      <td>2002</td>
+      <td>2012</td>
+      <td>10</td>
+      <td>
+        <a href="/note_prg/vb/#excel_vba_index">Excel VBAの覚書</a>
+      </td>
+    </tr>
+    <tr>
+      <td>VB6</td>
+      <td>8</td>
+      <td></td>
+      <td>2002</td>
+      <td>2008</td>
+      <td>6</td>
+      <td>
+        <a href="/note_prg/vb/">VBの覚書</a>
+      </td>
+    </tr>
+    <tr>
+      <td>Java</td>
+      <td>8</td>
+      <td></td>
+      <td>2003</td>
+      <td>2013</td>
+      <td>8</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>ACCESS</td>
+      <td>8</td>
+      <td></td>
+      <td>2003</td>
+      <td>2011</td>
+      <td>8</td>
+      <td>
+        <a href="/note_prg/vb/#access_vba_index">Access VBAの覚書</a>
+      </td>
+    </tr>
+    <tr>
+      <td>Java/サーブレット</td>
+      <td>8</td>
+      <td></td>
+      <td>2005</td>
+      <td>2013</td>
+      <td>3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>d3.js</td>
+      <td>7</td>
+      <td></td>
+      <td>2017</td>
+      <td>2017</td>
+      <td>1</td>
+      <td>
+        <a href="/note_prg/JavaScript/#d3_js_index">D3.jsの覚書(v4)</a>
+      </td>
+    </tr>
+    <tr>
+      <td>WordPress</td>
+      <td>7</td>
+      <td></td>
+      <td>2017</td>
+      <td>2017</td>
+      <td>1</td>
+      <td>
+        <a href="/note_prg/wordpress/">WordPressの覚書</a>
+      </td>
+    </tr>
+    <tr>
+      <td>Android/Java</td>
+      <td>6</td>
+      <td></td>
+      <td>2012</td>
+      <td>2012</td>
+      <td>1</td>
+      <td>
+        <a href="/note_prg/android/">Androidの覚書</a>
+      </td>
+    </tr>
+    <tr>
+      <td>Linux</td>
+      <td>5</td>
+      <td></td>
+      <td>2006</td>
+      <td></td>
+      <td></td>
+      <td>
+        <a href="/note_prg/linux/">Linuxの覚書</a>
+      </td>
+    </tr>
+    <tr>
+      <td>CSS</td>
+      <td>5</td>
+      <td></td>
+      <td>2009</td>
+      <td></td>
+      <td></td>
+      <td>
+        <a href="/note_prg/css_note/">CSSの覚書</a>
+      </td>
+    </tr>
+    <tr>
+      <td>CEO</td>
+      <td>5</td>
+      <td></td>
+      <td>2012</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>SSH</td>
+      <td>5</td>
+      <td></td>
+      <td>2018</td>
+      <td></td>
+      <td></td>
+      <td>
+        <a href="/note_prg/linux/#ssh_index">SSHの覚書</a>
+      </td>
+    </tr>
+    <tr>
+      <td>マネージメント</td>
+      <td>5</td>
+      <td></td>
+      <td>2018</td>
+      <td></td>
+      <td></td>
+      <td>
+        <a href="/note_prg/mgt/">マネージメントの覚書</a>
+      </td>
+    </tr>
+    <tr>
+      <td>C++</td>
+      <td>4</td>
+      <td></td>
+      <td>2003</td>
+      <td>2010</td>
+      <td>2</td>
+      <td>
+        <a href="/note_prg/cpp/">C++の覚書</a>
+      </td>
+    </tr>
+    <tr>
+      <td>PhotoShop</td>
+      <td>4</td>
+      <td></td>
+      <td>2003</td>
+      <td>2004</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>GIMP</td>
+      <td>4</td>
+      <td></td>
+      <td>2010</td>
+      <td>2017</td>
+      <td>7</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>SQLite</td>
+      <td>4</td>
+      <td></td>
+      <td>2012</td>
+      <td>2012</td>
+      <td>1</td>
+      <td>
+        <a href="/note_prg/sqlite/">SQLiteの覚書</a>
+      </td>
+    </tr>
+    <tr>
+      <td>C#</td>
+      <td>4</td>
+      <td></td>
+      <td>2012</td>
+      <td>2013</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Oracle</td>
+      <td>4</td>
+      <td></td>
+      <td>2013</td>
+      <td>2013</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Vue.js</td>
+      <td>4</td>
+      <td></td>
+      <td>2017</td>
+      <td>2017</td>
+      <td>1</td>
+      <td>
+        <a href="/note_prg/JavaScript/#vue_js_index">Vue.jsの覚書</a>
+      </td>
+    </tr>
+    <tr>
+      <td>VPS</td>
+      <td>4</td>
+      <td></td>
+      <td>2018</td>
+      <td></td>
+      <td></td>
+      <td>
+        <a href="/note_prg/linux/#vps_index">VPSの覚書</a>
+      </td>
+    </tr>
+    <tr>
+      <td>SQL Server</td>
+      <td>3</td>
+      <td></td>
+      <td>2005</td>
+      <td>2008</td>
+      <td>3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cake PHP3</td>
+      <td>3</td>
+      <td></td>
+      <td>2016</td>
+      <td>2016</td>
+      <td>1</td>
+      <td>
+        <a href="/note_prg/cakephp3/">CakePHP3の覚書</a>
+      </td>
+    </tr>
+    <tr>
+      <td>Electron</td>
+      <td>3</td>
+      <td></td>
+      <td>2018</td>
+      <td>2018</td>
+      <td>1</td>
+      <td>
+        <a href="/note_prg/electron/">Electronの覚書</a>
+      </td>
+    </tr>
+    <tr>
+      <td>Docker</td>
+      <td>2</td>
+      <td></td>
+      <td>2017</td>
+      <td></td>
+      <td></td>
+      <td>
+        <a href="/note_prg/linux/#docker_index">Dockerの覚書</a>
+      </td>
+    </tr>
+    <tr>
+      <td>Python</td>
+      <td>2</td>
+      <td></td>
+      <td>2017</td>
+      <td>2017</td>
+      <td>1</td>
+      <td>
+        <a href="/note_prg/python/">Pythonの覚書</a>
+      </td>
+    </tr>
+    <tr>
+      <td>Deep Learning</td>
+      <td>2</td>
+      <td></td>
+      <td>2017</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>WebLogic</td>
+      <td>1</td>
+      <td></td>
+      <td>2005</td>
+      <td>2005</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>DB2</td>
+      <td>1</td>
+      <td></td>
+      <td>2005</td>
+      <td>2005</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Ruby</td>
+      <td>1</td>
+      <td></td>
+      <td>2010</td>
+      <td>2010</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>ASP</td>
+      <td>1</td>
+      <td></td>
+      <td>2013</td>
+      <td>2013</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>appMobi</td>
+      <td>1</td>
+      <td></td>
+      <td>2013</td>
+      <td>2013</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Aungular</td>
+      <td>1</td>
+      <td></td>
+      <td>2016</td>
+      <td>2016</td>
+      <td>1</td>
+      <td>
+        <a href="/note_prg/angular/">Aungularの覚書</a>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+<div class="yohaku"></div>
+<ol class="breadcrumb">
+	<li><a href="/">ホーム</a></li>
+	<li>スキル</li>
+</ol>
+</div><!-- content -->
+<div id="footer">(C) kenji uehara 2002 - 2018</div>
+</body>
+</html>
