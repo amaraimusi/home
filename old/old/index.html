@@ -1,0 +1,117 @@
+﻿
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>ザッソウのムシ</title>
+	<link href="index.css" rel="stylesheet" type="text/css" />
+	<!--<script type="text/javascript" src="js/index.js"/>-->
+	<script Language="JavaScript">
+		 var n=0;
+		 function change(){
+		 	n++; 
+			if(n==3)n=0; 
+			var mainimg=document.getElementById('mainimage');
+			mainimg.src="images/mainpic"+n+".jpg";
+			//document.img.src="images/mainpic"+n+".jpg";
+		}
+	//ページロード時に実行されるイベントハンドラを登録
+	window.onload=function(){
+
+		//タイマーイベント　1秒ごとに処理を実行する。
+		timer =window.setInterval(function(){change();},10000);
+		
+		//画像をクリック時にタイマー処理を停止させる。
+		document.getElementById('mainimage').onclick=function(){
+			clearInterval(timer);
+		}
+	}
+	</script>
+	
+</head>
+
+<body>
+
+
+<div id="container">
+
+
+
+<div id="upper"></div>
+<div id="title"></div>
+
+<div id="mainpic"><img id="mainimage" src="images/mainpic0.jpg" name="img" width="480" height="480" border="0" onclick="change();"> </div>
+<div id="indexs">
+	
+	<ul>
+	<li><a href="http://fuemusi.ddo.jp/kaeru/pages/home.do"><div class = "indexs2">サンプルWebシステム</div></a></li>
+	<!--<li><a href="kaeru/pages/home.do"><div class = "indexs2">サンプルWebシステム</div></a></li>-->
+	<li><a href="mkup/home.htm"><div class = "indexs2">Webシステムのモックアップ</div></a></li>
+	<li><a href="zm_myprogram.html"><div class = "indexs2">過去に開発したプログラム</div></a></li>
+	<li><a href="zmsozai.html"><div class = "indexs2">イラスト</div></a></li>
+	<li><a href="#"><div class = "indexs2">熱帯魚観察記録</div></a></li>
+	<li><a href="#"><div class = "indexs2">クワガタ・カブト観察記録</div></a></li>
+	<li><a href="mypro.htm"><div class = "indexs2">プロフィール</div></a></li>
+	</ul>
+</div><!--indexs-->
+
+<div id="info">
+	<div class="small_title">お知らせ</div>
+	■サンプルWEBシステムについて。<br>
+	トレーディングカード通販サイトを模したサンプルシステムです。<br>
+	Java,Strutsで作成しています。<br>
+	同システムがおいてあるサーバーが不安定ですので、見れないときは申し訳ありませんが、時間をおいてからご覧いただくか、モックアップ（HTMLだけで作成された登録等ができない紙芝居のようなページ）をご覧ください。
+</div>
+
+
+<div id="history">
+	<div class="small_title">更新履歴</div>
+	<div id="history2">
+	<table border="1" width="100%">
+	<thead>
+		<tr>
+		<th width="20%">日付</th>
+		<th width="80%">更新内容</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>2009/8/1</td><td>トップページをリニューアル</td></tr>
+			<td>2003/6/12</td><td>いろいろとコンテンツを更新。</td></tr>
+			<td>2003/1/12</td><td>ザッソウ・LAQHP用マップエディターを公開。</td></tr>
+			<td>2002/12/24</td><td>掲示板を復旧。ホームページの仕様を少し変更。</td></tr>
+			<td>2002/12/11</td><td>パズルゲーム「ワナネズミ」公開。他に2点のツールも。</td></tr>
+			<td>2002/12/11</td><td>ホームページを全体的に変更</td></tr>
+			<td>2002/11/28</td><td>　「ゲーム作り」にあるデバイスを扱うクラスに注意書き</td></tr>
+			<td>2002/11/25</td><td> Javaアプレットの実験</td></tr>
+			<td>2002/10/16</td><td>「ゲーム作り」にあるデバイスを扱うクラスをバージョンアップ。</td></tr>
+			<td>2002/10/3</td><td>「ゲーム作り」を追加。そこにDirectInput８のクラス２点追加。</td></tr>
+			<td>2002年9月24日</td><td>リニューアルオープン</td></tr>
+			<td>2002年6月21日</td><td>「ゴキブル2 ～ギャース来襲～」にバージョンアップ</td></tr>
+			<td>2002年4月26日</td><td>「ゴキブル2 Ver1.02」にバージョンアップ</td></tr>
+			<td>2002年4月22日</td><td>「ゴキブル2 Ver1.01」にバージョンアップ</td></tr>
+			<td>2002年4月20日</td><td>「ゴキブル2」公開</td></tr>
+			<td>2002年2月22日</td><td>素材集の著作権を放棄。またイラストをなんまいか追加</td></tr>
+			<td>2002年1月14日</td><td>素材集に「フンコロガシ」「ジガバチ」を追加</td></tr>
+			<td>2002年1月12日</td><td>素材集に「セミ」他２点を追加</td></tr>
+			<td>2001年11月28日</td><td>素材集に「カマキリ」を追加</td></tr>
+			<td>2001年11月23日</td><td>素材集に「オトシブミ」を追加</td></tr>
+			<td>2001年11月23日</td><td>素材集に「ジガバチ男」を追加</td></tr>
+			<td>2001年11月22日</td><td>素材集の「オオグモ」を修正。</td></tr>
+			<td>2001年11月10日</td><td>新規にフリー画像の掲載。</td></tr>
+			<td>2001年10月？日</td><td>このページを作成</td></tr>
+		</tr>
+	</tbody>
+	</table>
+</div><!--history2-->	
+</div><!--history-->
+
+
+<br>
+<div id="footer">
+	<center>(c) Kenji Uehara</center>
+</div><!--footer-->	
+
+
+</div><!--container-->
+</body>
+</html>

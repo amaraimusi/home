@@ -1,0 +1,288 @@
+
+
+
+
+
+
+
+
+
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>トレカ通販ネコ</title>
+	<link href="userInp.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/input_check.js"/>	
+<script type="text/javascript" src="js/auto_form_input.js"/>	
+<script type="text/javascript" >
+<!--
+			//window.alert('ボタンクリックしたネコ2。');
+	//ページロード時に実行されるイベントハンドラを登録
+	window.onload=function(){
+		//▼警告メッセージを非表示しておく。
+		document.getElementById("txtPostNoStr3Err").style.display="none";
+		document.getElementById("txtPostNoStr4Err").style.display="none";
+		document.getElementById("txtKanaErr").style.display="none";
+		document.getElementById("txtMailErr").style.display="none";
+
+		//■■■イベントハンドラを登録
+
+		//▼郵便番号3テキストボックス・フォーカスイベント処理
+		var txtPostNoStr3 =document.getElementById('txtPostNoStr3').childNodes.item(0);
+		txtPostNoStr3.onblur=function(){
+			
+			//郵便番号１チェック
+			//テキストボックスからフォーカスが外れたときに、数値、文字数チェックが行われ、
+			// 規定内である場合は入力文字列を黒、規定外であるなら赤にする。
+			var value =txtPostNoStr3.value;
+			if(isNumeric(value)==true && rangeCheck(value,3,3)){
+				txtPostNoStr3.style.color='black';
+				document.getElementById("txtPostNoStr3Err").style.display="none";
+			}else{
+				txtPostNoStr3.style.color='red';
+				document.getElementById("txtPostNoStr3Err").style.display="inline";
+			}
+
+		}
+
+		//▼郵便番号4テキストボックス・フォーカスイベント処理
+		var txtPostNoStr4 =document.getElementById('txtPostNoStr4').childNodes.item(0);
+		txtPostNoStr4.onblur=function(){
+			
+			//郵便番号１チェック
+			//テキストボックスからフォーカスが外れたときに、数値、文字数チェックが行われ、
+			// 規定内である場合は入力文字列を黒、規定外であるなら赤にする。
+			var value =txtPostNoStr4.value;
+			if(isNumeric(value)==true && rangeCheck(value,4,4)){
+				txtPostNoStr4.style.color='black';
+				document.getElementById("txtPostNoStr4Err").style.display="none";
+			}else{
+				txtPostNoStr4.style.color='red';
+				document.getElementById("txtPostNoStr4Err").style.display="inline";
+			}
+
+		}
+
+		//▼フリガナテキストボックス・フォーカスイベント処理
+		var txtKana =document.getElementById('txtKana').childNodes.item(0);
+		txtKana.onblur=function(){
+			
+			//郵便番号１チェック
+			//テキストボックスからフォーカスが外れたときに、数値、文字数チェックが行われ、
+			// 規定内である場合は入力文字列を黒、規定外であるなら赤にする。
+			var value =txtKana.value;
+			value=hira2kata(value);//ひらがなをカタカナに変換
+			value=hankakukanaToZenkakukana(value);//半角カタカナを全角カタカナに変換
+			txtKana.value=value;
+	
+			
+			if(katakana2(value)==true){
+				//alert(value);
+				txtKana.style.color='black';
+				document.getElementById("txtKanaErr").style.display="none";
+			}else{
+				
+				txtKana.style.color='red';
+				document.getElementById("txtKanaErr").style.display="inline";
+			}
+
+		}
+
+		//▼電話番号テキストボックス・フォーカスイベント処理
+		var txtTell =document.getElementById('txtTell').childNodes.item(0);
+		txtTell.onblur=function(){
+			
+			//郵便番号１チェック
+			//テキストボックスからフォーカスが外れたときに、文字数チェックが行われ、
+			// 規定内である場合は入力文字列を黒、規定外であるなら赤にする。
+			var value =txtTell.value;
+			if(rangeCheck(value,0,32)){
+				txtTell.style.color='black';
+			}else{
+				txtTell.style.color='red';
+			}
+
+		}
+
+		//▼メールアドレステキストボックス・フォーカスイベント処理
+		var txtMail =document.getElementById('txtMail').childNodes.item(0);
+		txtMail.onblur=function(){
+			
+			//郵便番号１チェック
+			//テキストボックスからフォーカスが外れたときにメールアドレスチェックチェックが行われ、
+			// 規定内である場合は入力文字列を黒、規定外であるなら赤にする。
+			var value =txtMail.value;
+			if(isEmail(value)==true){
+				txtMail.style.color='black';
+				document.getElementById("txtMailErr").style.display="none";
+			}else{
+				txtMail.style.color='red';
+				document.getElementById("txtMailErr").style.display="inline";
+			}
+
+		}
+
+
+	}
+
+//-->
+</script>
+
+</head>
+
+<body>
+<div id="container">
+<!-- メインコンテンツ-->
+<div id = "main_content">
+
+<br>
+<h1>注文情報入力</h1>
+
+<!-- エラーメッセージ表示 -->
+<div id="err_massage">
+	
+</div>
+
+<form name="OderForm" method="POST" action="oder-check.htm">
+
+	<table id="inputTable" border="1">
+	<thead><tr>
+		<th id = "th_inpName"> 入力項目名</th>
+		<th id = "th_input">入力</th>
+		<th id = "th_note">説明</th>
+	</tr></thead>
+	<tbody>
+	
+
+
+	<tr>
+		<td>郵便番号<span class="indisInp">【必須入力】</span></td>
+		<td><span id="txtPostNoStr3"><input type="text" name="postNoStr3" maxlength="3" size="3" value=""></span>-
+			<span id="txtPostNoStr4"><input type="text" name="postNoStr4" maxlength="4" size="4" value=""></span>
+			<br><span class="err_msg2" id="txtPostNoStr3Err">左側の入力欄は3ケタの半角数字で入力してください。</span>
+			<span class="err_msg2" id="txtPostNoStr4Err">右側の入力欄は4ケタの半角数字で入力してください。</span></td>
+		<td>半角数字で入力してください。</td>
+	</tr>
+	<tr>
+		<td>都道府県<span class="indisInp">【必須入力】</span></td>
+		<td>
+			<select name="userEnt.todohukenId"><option value="1">北海道</option>
+<option value="2">青森県</option>
+<option value="3">岩手県</option>
+<option value="4">宮城県</option>
+<option value="5">秋田県</option>
+<option value="6">山形県</option>
+<option value="7">福島県</option>
+<option value="8">東京都</option>
+<option value="9">神奈川県</option>
+<option value="10">埼玉県</option>
+<option value="11">千葉県</option>
+<option value="12">茨城県</option>
+<option value="13">栃木県</option>
+<option value="14">群馬県</option>
+<option value="15">山梨県</option>
+<option value="16">新潟県</option>
+<option value="17">長野県</option>
+<option value="18">富山県</option>
+<option value="19">石川県</option>
+<option value="20">福井県</option>
+<option value="21">愛知県</option>
+<option value="22">岐阜県</option>
+<option value="23">静岡県</option>
+<option value="24">三重県</option>
+<option value="25">大阪府</option>
+<option value="26">兵庫県</option>
+<option value="27">京都府</option>
+<option value="28">滋賀県</option>
+<option value="29">奈良県</option>
+<option value="30">和歌山県</option>
+<option value="31">鳥取県</option>
+<option value="32">島根県</option>
+<option value="33">岡山県</option>
+<option value="34">広島県</option>
+<option value="35">山口県</option>
+<option value="36">徳島県</option>
+<option value="37">香川県</option>
+<option value="38">愛媛県</option>
+<option value="39">高知県</option>
+<option value="40">福岡県</option>
+<option value="41">佐賀県</option>
+<option value="42">長崎県</option>
+<option value="43">熊本県</option>
+<option value="44">大分県</option>
+<option value="45">宮崎県</option>
+<option value="46">鹿児島県</option>
+<option value="47">沖縄県</option></select>
+		</td>
+		<td></td>
+	</tr>
+	<tr>
+		<td>住所<span class="indisInp">【必須入力】</span></td>
+		<td colspan="2"><span class="text100per"><input type="text" name="userEnt.address" maxlength="200" value=""></span></td>
+	</tr>
+	<tr>
+		<td>氏名<span class="indisInp">【必須入力】</span></td>
+		<td><span class="text100per"><input type="text" name="userEnt.name" maxlength="100" value=""></span></td>
+		<td>最大文字数は100文字です。</td>
+	</tr>
+
+
+	<tr>
+
+	<tr>
+		<td>電話番号</td>
+		<td><span class="text32" id="txtTell"><input type="text" name="userEnt.tell" maxlength="32" value=""></span></td>
+		<td>32文字まで入力できます。</td>
+	</tr>
+
+	<tr>
+		<td>メールアドレス<span class="indisInp"><br>【必須入力】</span></td>
+		<td><span class="text100per" id="txtMail"><input type="text" name="userEnt.mail" maxlength="255" value="">
+		<span class="err_msg2" id="txtMailErr">入力に誤りがあります。</span></span></td>
+		<td>半角英数字のメールアドレス形式で入力してください。最大255文字です。</td>
+	</tr>
+	<tr>
+		<td>発送<span class="indisInp">【必須入力】</span></td>
+		<td>
+			<select name="sendId"><option value="1" selected="selected">クロネコメール</option>
+<option value="2">エクスパック</option>
+<option value="3">定形外郵便</option></select>
+		</td>
+		<td>発送方法を選択してください。</td>
+	</tr>
+	<tr>
+		<td>お支払<span class="indisInp">【必須入力】</span></td>
+		<td>
+			<select name="payId"><option value="1" selected="selected">銀行振り込み</option>
+<option value="2">郵便局振込</option>
+<option value="3">代引</option></select>
+		</td>
+		<td>お支払い方法を選択してください。</td>
+	</tr>	
+	<tr>
+		<td>振込者名義</td>
+		<td><span class="text100per" id="txtKana"><input type="text" name="payName" maxlength="100" value=""></span>
+		<span class="err_msg2" id="txtKanaErr">全角カタカナで入力してください。</span></td>
+		<td>全角カタカナで入力してください。最大文字数は100文字です。</td>
+	</tr>
+	<tr>
+		<td>備考</td>
+		<td><span id="txtNote"><textarea name="note" cols="35" rows="10"></textarea></span></td>
+		<td>最大文字数は800字です。</td>
+	</tr>
+
+	
+	</tbody>
+	</table>
+
+
+<input type="submit" name="submitValue" value="次へ">
+</form>
+<div id="footer">
+	<h6>COPYRIGHT 2008 UEHARA</h6>
+</div>	
+	
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,112 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>カタログ</title>
+<link href="common.css" rel="stylesheet" type="text/css" />
+<link href="index.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="common.js"></script>
+
+<body>
+<div id="container">
+	<div id="logo" ><center><img src="images/top/logo/logo_title.png" alt="★サンプルＡ" width="400" height="100" /></center></div>
+		
+	<div id="navibar" >
+		<center>
+			<table id="navi_btn">
+			<tr>
+				<td>
+					<a href="index.html">ホーム</a>
+				</td>
+				<td>
+					<a href="item_list.html">ショップ</a>
+				</td>
+				<td>
+					<a href="cart.html">カートを見る</a>
+				</td>
+				<td>
+					<a href="#">雑記</a>
+				</td>
+				<td>
+					<a href="#">アクセス</a>
+				</td>
+			</tr>
+			</table>
+
+		</center>
+	</div>
+		
+ 	<div id="sidebar">
+		<p><a href="item_list.html" OnMouseOver ="showChange('tropical_fish')">熱帯魚</a></p>
+		<ul id="tropical_fish">
+			<li><a href="item_list.html">熱帯魚</a></li>
+			<li><a href="item_list.html">海水魚</a></li>
+			<li><a href="item_list.html">熱帯魚用品</a></li>
+		</ul>
+		<p><a href="item_list.html" OnMouseOver ="showChange('reptiles')">爬虫類</a></p>
+		<ul id="reptiles">
+		    <li><a href="item_list.html">カメ</a></li>
+		    <li><a href="item_list.html">トカゲ</a></li>
+		</ul>
+		<p><a href="#" OnMouseOver ="showChange('insect')">昆虫</a></p>
+		<ul id="insect">
+		    <li><a href="item_list.html">カブトムシ</a></li>
+		    <li><a href="item_list.html">クワガタ</a></li>
+		    <li><a href="item_list.html">その他</a></li>
+		</ul>
+	</div>
+
+<!-- メインコンテンツ-->
+
+    <div id = "main_content_home">
+		<div id = "main_area1">
+			<p>このサイトはサンプルです。実際に売買はされません。</p>
+			<span>
+				ペット通販における購入手続きや、管理者による商品管理などをシミュレートしています。<br>
+				実際に入力した情報は一時的にデータベースに登録されますが、定期的に元に戻します。<br>
+			</span>
+		</div>
+		<div id = "main_area2">
+			<center>
+				<div id="banner">
+						<img src="images/home/hachurui.png" alt="バナー・爬虫類" width="200" height="75" />
+						<img src="images/home/kabutomusi.png" alt="バナー・カブトムシ" width="200" height="75" />
+						<img src="images/home/kame.png" alt="バナー・カメ" width="200" height="75" />
+						<img src="images/home/netaigyo.png" alt="バナー・熱帯魚" width="200" height="75" />
+				</div>
+			</center>
+		</div>
+		<div id = "main_area3">
+			<div class="item_info">
+				<h1>新着商品</h1>
+			</div>
+			<div class = "item_info">
+				<hr>
+				<img src="item_image/terapia.png" width="250" height="250" align = "left">
+				<p>テラピア 100円 </p>
+				<p>購入数<input type="text" name="buy_count" size="1"> <input type="button" name="btn_buy" value="カートに入れる" onClick="javascript:location.href='cart.html'"/></p>
+						雑食性で淡水、汽水の様々な環境に適応するが、冷たい水には棲まない。ティラピア という名称は、日本に導入された3種がいずれも当時Tilapia属に分類されていたことに由来するが、現在ではそのうちの2種はOreochromis属に分類が変更されている。
+			</div>
+			<div class = "item_info">
+				<hr>
+				<img src="item_image/timo.png" width="250" height="250" align = "left">
+				<p>ティモ 1000000啓ドル </p>
+				<p>購入数<input type="text" name="buy_count" size="1"> <input type="button" name="btn_buy" value="カートに入れる" onClick="javascript:location.href='cart.html'"></p>
+				ねずみを取るのが得意。よく逃げる猫。特に野外では野生動物のごとく逃げる。捕まえるとニャーンと鳴く。
+			</div>
+			<div class = "item_info">
+				<hr>
+				<img src="item_image/yugoi.png" width="250" height="250" align = "left">
+				<p>ユゴイ 3000円 </p>
+				<p>購入数<input type="text" name="buy_count" size="1"> <input type="button" name="btn_buy" value="カートに入れる" onClick="javascript:location.href='cart.html'"></p>
+					黒潮の影響を受ける地域では、ユゴイやオオクチユゴイの幼魚が見られることがあります。 ... また、南西諸島ではこの魚のほうがユゴイよりも大きくなり、25cmくらいのものも珍しくなく、 ルアー釣りの対象にもされているようです。
+			</div>
+		</div>
+	</div>
+	
+  <div id="footer">
+    <h6>COPYRIGHT 2008 UEHARA</h6>
+  </div>
+</div>
+</body>
+</html>

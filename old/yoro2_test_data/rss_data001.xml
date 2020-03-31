@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" 
+xmlns:georss="http://www.georss.org/georss"
+xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#">
+<channel>
+<author>提供者</author>
+<category>カテゴリ</category>
+<copyright>著作（＝提供者）</copyright>
+<description>詳細説明</description>
+<docs>RSS 2.0の公式フォーマットのURL</docs>
+<generator>当データを作成したシステム名</generator>
+<guid>ID</guid>
+<image>画像URL</image>
+<language>言語</language>
+<lastBuildDate>最終配信日（最終更新日）</lastBuildDate>
+<link>詳細情報URL</link>
+<managingEditor>編集者メールアドレスと名前</managingEditor>
+<pubDate>発行日（最終更新日）</pubDate>
+<source>リソースURL</source>
+<title>タイトル</title>
+<url>URL（リソースURL）</url>
+<georss:point>georss緯度経度</georss:point>
+<geo:Point>
+<geo:lat>geo緯度</geo:lat>
+<geo:lon>geo経度</geo:lon>
+</geo:Point>
+<item>
+<author></author>
+<category>自然</category>
+<copyright></copyright>
+<description>養老山（ようろうさん）は、岐阜県養老郡養老町と大垣市上石津町地域自治区（旧養老郡上石津町）にまたがる標高859mの山である。旧名を多芸山ともいう。養老山地を代表する山で、山頂には一等三角点が設置されている[1]。</description>
+<docs>http://blogs.law.harvard.edu/tech/rss</docs>
+<generator>歴史文化資源観光ガイド</generator>
+<guid>119</guid>
+<image>http://amgm.web2.jp/images/2005/051019GifuYorosan/IMG_0210.JPG</image>
+<language>日本語</language>
+<lastBuildDate>2011-10-07 17:05:58</lastBuildDate>
+<link>http://ja.wikipedia.org/wiki/%E9%A4%8A%E8%80%81%E5%B1%B1_(%E5%B2%90%E9%98%9C%E7%9C%8C)</link>
+<managingEditor>neko@dummy(猫)</managingEditor>
+<pubDate>2011-10-07 17:05:58</pubDate>
+<source></source>
+<title>養老山</title>
+<url></url>
+<georss:point>35.2624078499 136.5217781067</georss:point>
+<geo:Point>
+<geo:lat>35.2624078499</geo:lat>
+<geo:lon>136.5217781067</geo:lon>
+</geo:Point>
+</item>
+<item>
+<author></author>
+<category>自然</category>
+<copyright></copyright>
+<description>養老公園の詳細説明</description>
+<docs>http://blogs.law.harvard.edu/tech/rss</docs>
+<generator>歴史文化資源観光ガイド</generator>
+<guid>120</guid>
+<image></image>
+<language>日本語</language>
+<lastBuildDate>2011-10-07 17:04:35</lastBuildDate>
+<link></link>
+<managingEditor>neko@dummy(猫)</managingEditor>
+<pubDate>2011-10-07 17:04:35</pubDate>
+<source></source>
+<title>養老公園</title>
+<url></url>
+<georss:point>35.2835862519 136.5501880646</georss:point>
+<geo:Point>
+<geo:lat>35.2835862519</geo:lat>
+<geo:lon>136.5501880646</geo:lon>
+</geo:Point>
+</item>
+</channel>
+</rss>

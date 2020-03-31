@@ -1,0 +1,48 @@
+#main_content{	
+	float:left;
+	display: inline;
+	width: 75%;
+	height: 100%;
+	color:#26471c;
+	line-height:24px;
+}
+
+#main_area1{
+	width:75%;
+	
+}
+#buy{
+	display: block;
+	width:100px;
+	height:50px;
+	font-size:24px;
+}
+#buy a{
+	color: #d4ff00;
+	background-image:url(images/cart/buy.png); 
+	text-decoration: none;
+}
+#buy a:hover{  
+	color: #0000ff;
+	text-decoration: underline;
+}
+#main_area2{
+	
+}
+
+
+#main_area2 th{
+	background-color:#c0ff8c;
+} 
+#main_area2 td{
+	background-color:#ecffdd;
+}
+#main_area2 td.kakaku{
+	text-align:right;
+}
+
+#del_btn{
+	
+	width:40px;
+}
+

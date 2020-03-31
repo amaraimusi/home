@@ -1,0 +1,20 @@
+﻿@charset "utf-8";
+@import "common.css";
+
+
+/* メッセージウィンドウ */
+#window2{
+	margin-top:200px;
+	width:auto;
+	height:70px;
+	border-style:ridge;
+	border-width:5px;
+	border-color:#acfffe;
+	background-color:#ceffff;
+	text-indent:0em;
+	color:#da690b;
+}
+
+
+
+

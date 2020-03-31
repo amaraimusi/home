@@ -1,0 +1,79 @@
+﻿@charset "utf-8";
+@import "common.css";
+
+
+
+
+
+/* 陳列商品件数０件 */
+#notitem{
+	width:auto;
+	height:50px;
+	border-style:ridge;
+	border-width:5px;
+	border-color:#acfffe;
+	background-color:#ceffff;
+	text-indent:0em;
+	font-size:2em;
+	color:#086074;
+	text-align:center;
+	padding-top:20px;
+}
+
+
+/* 陳列商品ボックスタイプ */
+#itembox ul li{
+    display:block;
+	float:left;
+    overflow:hidden;
+	width:150px;
+	height:300px;
+	margin:5px;
+	text-align:center;
+	text-indent:0em;
+	border-style:ridge;
+	border-width:5px;
+	border-color:#acfffe;
+	line-height:1.2em;
+	color:#405c1d;
+}
+.itembox_pic{height:135px;}
+.itembox_text{
+	height:123px;
+	border-style:solid;
+	border-color:#81bebe;
+	border-width:1px;
+  	background-color:#a7fdfd;
+	font-size:0.8em;
+}
+.itembox_text p{line-height:0em;}
+
+
+
+
+/* ▼▼▼ 陳列商品リストタイプ ▼▼▼ */
+
+#itemlist{
+	width:auto;
+	margin-top:30px;
+	margin-bottom:30px;
+}
+#itemlist table{
+	border-collapse:collapse;
+	border-color:#0a6276;
+	text-indent:0em;
+
+} 
+
+#itemlist thead{
+	background-color:#90d7f3; 
+	font-size:0.8em;
+}
+
+
+#itemlist tbody{
+	background-color:#acfffe; 
+	font-size:0.8em;
+}
+
+/* ▲▲▲ 陳列商品リストタイプ ▲▲▲ */

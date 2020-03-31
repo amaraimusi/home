@@ -1,0 +1,64 @@
+﻿<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link href="css/common.css" rel="stylesheet" type="text/css" />
+	<title>社員日報管理システム・社員新規入力</title>
+</head>
+<body>
+<div id="header">
+<input type="button" value="ログアウト" onClick="javascript:location.href='login.htm'"/><br>
+<h1>社員新規入力</h1>
+</div>
+<div id="contents">
+<table border="1">
+<thead>
+	<tr>
+		<th>項目名</th>
+		<th>入力</th>
+		<th>説明</th>
+		
+	</tr>
+</thead>
+<tbody>
+	<tr>
+		<td>役職</td><td><input type="text"></td><td>50文字以内で入力してください。例：西表　山猫</td>
+	</tr>
+	<tr>
+		<td>名前</td><td><input type="text"></td><td>50文字以内で入力してください。例：イリオモテ　ヤマネコ</td>
+	</tr>
+	<tr>
+		<td>フリガナ</td><td><input type="text"></td><td>カタカナで50文字以内で入力してください。</td>
+	</tr>
+	<tr>
+		<td>パスワード</td><td><input type="password"></td><td>半角英数字で8文字以上で入力してください。</td>
+	</tr>
+	<tr>
+		<td>パスワード確認</td><td><input type="password"></td><td>確認のためもう一度パスワードを入力してください。</td>
+	</tr>
+	<tr>
+		<td>郵便番号</td><td><input type="text"></td><td>７桁の半角数字で入力してください。例：1234567</td>
+	</tr>
+	<tr>
+		<td>都道府県</td><td><input type="text"></td><td>都道府県を選択してください。</td>
+	</tr>
+	<tr>
+		<td>住所</td><td><input type="text"></td><td>都道府県から下の住所を100文字以内で入力してください。例：石垣市美崎町9-999猫アパート909</td>
+	</tr>
+	<tr>
+		<td>メールアドレス</td><td><input type="text"></td><td>半角英数字で100文字以内で入力してください。</td>
+	</tr>
+	<tr>
+		<td>電話番号</td><td><input type="text"></td><td>20文字以内で入力してください。</td>
+	</tr>
+	<tr>
+		<td>管理者権限</td><td><input type="checkbox"></td><td>社員の日報を確認する権限のある場合はチェックを入れてください。</td>
+	</tr>
+
+</tbody>
+</table>
+<input type="submit" value="次へ" onClick="javascript:location.href='staffNewInpChk.htm'"/>
+</div><!-- contents -->
+<div id="footer">(C)Kenji Uehara</div>
+</body>
+</html>

@@ -1,0 +1,115 @@
+
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>ZASSO_MUSI</title>
+	<link href="index.css" rel="stylesheet" type="text/css" />
+	<!--<script type="text/javascript" src="js/index.js"/>-->
+	<script Language="JavaScript">
+	<!--
+		 var n=0;
+		 function change(){
+		 	n++; 
+			if(n==7)n=0; 
+			var mainimg=document.getElementById('mainimage');
+			mainimg.src="images/mainpic"+n+".jpg";
+			//document.img.src="images/mainpic"+n+".jpg";
+		}
+	//ページロード時に実行されるイベントハンドラを登録
+	window.onload=function(){
+
+		//タイマーイベント　1秒ごとに処理を実行する。
+		timer =window.setInterval(function(){change();},10000);
+		
+		//画像をクリック時にタイマー処理を停止させる。
+		document.getElementById('mainimage').onclick=function(){
+			clearInterval(timer);
+		}
+	}
+
+	function sendmail(){
+		var mailaddress='mailto:'+'uehara'+'_kenji_okinawa'+'@ybb.ne.jp';
+		location.href=mailaddress;
+	}
+	-->
+	</script>
+	
+</head>
+
+<body>
+
+
+<div id="container">
+
+
+
+<div id="upper"></div>
+<div id="title"></div>
+
+<div id="mainpic"><img id="mainimage" src="images/mainpic0.jpg" name="img" width="480" height="480" border="0" onclick="change();"> </div>
+<div id="indexs">
+	
+	<ul>
+	<li><a href="note_prg"><div class = "indexs2">プログラミングの覚書</div></a></li>
+	<li><a href="web_sys_list/web_sys_list.htm"><div class = "indexs2">サンプルWebシステム</div></a></li>
+	<!--<li><a href="kaeru/pages/home.do"><div class = "indexs2">サンプルWebシステム</div></a></li>-->
+	<li><a href="app_list/app_list.htm"><div class = "indexs2">自作プログラム</div></a></li>
+	<li><a href="vba_app_list/vba_app_list.htm"><div class = "indexs2">自作プログラム　Excel VBA</div></a></li>
+	<li><a href="zmsozai.html"><div class = "indexs2">準備中</div></a></li>
+	<li><a href="#"><div class = "indexs2">準備中</div></a></li>
+	<li><a href="prof/gyomu_keireki.htm"><div class = "indexs2">業務経歴</div></a></li>
+	<li><a href="old/mypro.htm"><div class = "indexs2">プロフィール(仮）</div></a></li>
+	</ul>
+</div><!--indexs-->
+
+<div id="info">
+	<div class="small_title">お知らせ</div>
+	■サンプルWebシステムについて<br>
+	　トレーディングカード通販システムでＩＥ８にて起こるJavascript関連のバグを確認しました。一部修正しましたが、まだ幾つかバグが残っています。現在修正中です。<br>
+	　サンプルWEBシステムを幾つか開発中も含めて公開中です。ソースファイル郡のダウンロードも可能です。<br>
+	これらのサンプルWEBシステムはJava,Struts,Javascriptで作成されています。<br>
+	<br>
+	■自作プログラムについて<br>
+	　現在、自作プログラムを随時UPしています。ソースコードのダウンロードもできます。
+</div>
+
+
+<div id="history">
+	<div class="small_title">更新履歴</div>
+	<div id="history2">
+	<table border="1" width="100%">
+	<thead>
+		<tr>
+		<th width="20%">日付</th>
+		<th width="80%">更新内容</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>2017/4/3</td><td>プログラミングの覚書</td></tr>
+			<td>2009/9/15</td><td>サンプルWEBシステムにIE8のバグを確認</td></tr>
+			<td>2009/9/9</td><td>業務経歴ページ追加</td></tr>
+			<td>2009/9/9</td><td>サンプルWEBシステムにCakePHPテストを追加</td></tr>
+			<td>2009/9/6</td><td>自作プログラムページに自作プログラムを1件追加</td></tr>
+			<td>2009/9/4</td><td>自作プログラムページ を追加</td></tr>
+			<td>2009/9/3</td><td>自作プログラムVBAページ を追加</td></tr>
+			<td>2009/9/1</td><td>サンプルWEBシステムページの作成</td></tr>
+			<td>2009/8/1</td><td>2回目のリニューアル</td></tr>
+			<td>2002年9月24日</td><td>リニューアルオープン　更新内容は省略。</td></tr>
+			<td>2001年10月？日</td><td>このページを作成。更新内容は省略。</td></tr>
+		</tr>
+	</tbody>
+	</table>
+</div><!--history2-->	
+</div><!--history-->
+<br><br>
+<p><center><input type="button" value="お問い合わせ" onClick="javascript:sendmail()"/></center></p>
+
+<div id="footer">
+	<center>(c) Kenji Uehara</center>
+</div><!--footer-->	
+
+
+</div><!--container-->
+</body>
+</html>

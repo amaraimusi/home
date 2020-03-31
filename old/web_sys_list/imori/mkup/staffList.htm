@@ -1,0 +1,58 @@
+﻿<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link href="css/common.css" rel="stylesheet" type="text/css" />
+	<title>社員日報管理システム・社員一覧</title>
+</head>
+<body>
+<div id="header">
+<input type="button" value="ログアウト" onClick="javascript:location.href='login.htm'"/><br>
+<h1>社員一覧</h1>
+</div>
+<div id="contents">
+ログイン：猫村太郎<br><br>
+<input type="button" value="新規追加" onClick="javascript:location.href='staffNewInp.htm'"/><input type="button" value="日報一覧"  onClick="javascript:location.href='reportList.htm'"/><input type="button"  onClick="javascript:location.href='reportNewInp.htm'" value="日報入力" />
+<br>
+<table border="1">
+<thead>
+	<tr>
+		<th>社員番号</th>
+		<th>名前</th>
+		<th>フリガナ</th>
+		<th>役職</th>
+		<th>メールアドレス</th>
+		<th>電話番号</th>
+		<th>上司確認</th>
+		<th>編集</th>
+		<th>削除</th>
+	</tr>
+</thead>
+<tbody>
+	<tr>
+		<td>1000</td>
+		<td><a href="staffDetail.htm">猫村 猫太郎</a></td>
+		<td>ネコムラ ネコタロウ</td>
+		<td>社員</td>
+		<td>neko@fuemu.ne.jp</td>
+		<td>090-xxxx-xxxx</td>
+		<td><a href="reportList.htm">未チェック</a></td>
+		<td><input type="button" value="編集" onClick="javascript:location.href='staffEditInp.htm'"/></td>
+		<td><input type="button" value="削除"/></td>
+	</tr>
+	<tr>
+		<td>1001</td>
+		<td><a href="staffDetail.htm">西表　山猫</a></td>
+		<td>イリオモテ　ヤマネコ</td>
+		<td>部長</td>
+		<td>iriomoteyamaneko@fuemu.ne.jp</td>
+		<td>090-xxxx-xxxx</td>
+		<td><a href="reportList.htm">未チェック</a></td>
+		<td><input type="button" value="編集" onClick="javascript:location.href='staffEditInp.htm'"/></td>
+		<td><input type="button" value="削除"/></td>
+	</tr>
+</tbody>
+</table>
+</div><!-- contents -->
+<div id="footer">(C)Kenji Uehara</div>
+</body>
+</html>

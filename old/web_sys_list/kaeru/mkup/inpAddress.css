@@ -1,0 +1,35 @@
+#main_content{	
+	float:left;
+	display: inline;
+	width: 75%;
+	height: 100%;
+	color:#26471c;
+	line-height:24px;
+}
+
+.indes{
+	font-size:0.5em;
+	color:#ff0000;
+}
+
+
+#main_area1{
+	margin-top:50px;
+	
+}
+#main_area1 table{
+	text-align:left;
+	border-spacing:0.8em;
+	color:#26471c;
+}
+
+td #komoku{
+	width:100px;
+}
+
+#memo1{
+	font-size:0.8em;
+}
+
+
+

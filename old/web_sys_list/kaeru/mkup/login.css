@@ -1,0 +1,58 @@
+﻿@charset "utf-8";
+@import "common.css";
+
+
+/*エラーメッセージ*/
+#err_massage{
+	margin-top:10px;
+	color:red;
+}
+
+.err_msg2{
+	color:red;
+}
+
+
+/* ｳｨﾝﾄﾞｳ２ */
+#window2{
+	margin-top:200px;
+	padding:30px;
+	width:auto;
+	height:70px;
+	border-style:ridge;
+	border-width:5px;
+	border-color:#acfffe;
+	background-color:#ceffff;
+	text-indent:0em;
+	color:#da690b;
+}
+
+/* ▼▼▼ 入力テーブル ▼▼▼ */
+
+#inputTable{
+	table-layout:fixed;
+	width:80%;
+	border-collapse:collapse;
+	border-color:#0a6276;
+	text-indent:0em;
+	color:#0a3811;
+}
+
+
+
+#inputTable thead{
+	background-color:#90d7f3; 
+	font-size:0.8em;
+}
+
+
+#inputTable tbody{
+	background-color:#acfffe; 
+	font-size:0.8em;
+
+}
+
+
+.text100per input{
+	width:100%;
+}

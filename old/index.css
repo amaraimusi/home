@@ -1,0 +1,158 @@
+ @charset "utf-8";
+
+body{
+	background-image: url(images/main_back.jpg);
+	background-repeat: repeat;
+	text-align: center;
+}
+#container {
+	margin-top:10px;
+	width: 800px;
+	position:relative;
+	margin-right:auto;
+	margin-left:auto;
+	text-align: left;
+	height:auto;
+	background-color:#f2dc96;
+
+}
+#upper{
+	width:800px;
+	height:10px;
+}
+#title{
+	margin:10px;
+	width:780px;
+	height:80px;
+	background-color:blue;
+	background-image: url(images/title.jpg);
+	
+}
+
+#mainpic{
+	float:left;
+	margin:10px;
+	width:480px;
+	height:480px;
+}
+
+#indexs{
+	float:left;
+	margin-right:10px;
+	margin-top:10px;
+	margin-bottom:10px;
+	
+	width:290px;
+	height:480px;
+}
+
+#indexs ul{
+	list-style:none;
+	padding-left:0px;
+	margin-left:0px;
+}
+
+#indexs li a{
+
+	display:block;
+	width:auto;
+	height:68px;
+	background-image: url(images/indexs.png);
+	text-indent:2em;
+    overflow:hidden;
+	color:#fff7e0;
+	text-decoration: none;
+	font-weight:bold;
+	width:290px; background-position:0       0;
+
+}
+
+#indexs li  a:hover { 
+	width:290px; background-position:0       -68px;
+	color:red;
+}
+
+.indexs2{
+	padding-top:28px;
+}
+
+#info{
+	float:left;
+	margin-left:10px;
+	margin-right:10px;
+	margin-bottom:10px;
+	width:780px;
+	height:200px;
+	background-color:#f8ecc7;
+	line-height:1.5em;
+	color:#55430b;
+	
+}
+.small_title{
+	width:100%;
+	height:30px;
+	background-color:#6bca2d;
+	color:#f7fcf3;
+	font-size:1.5em;
+	text-indent:1em;
+}
+
+
+#history{
+	float:left;
+	margin-left:10px;
+	margin-right:10px;
+	width:780px;
+	background-color:#f8ecc7;
+}
+#history2{
+	overflow:scroll;
+	height:200px;
+}
+#history table{
+	border-collapse:collapse;
+}
+#history table thead{
+	background-color:#caa77d;
+}
+#history table tbody{
+	font-size:0.8em;
+}
+
+.wnd1{
+	float:left;
+	margin-left:10px;
+	margin-right:10px;
+	margin-bottom:30px;
+	width:780px;
+	background-color:#f8ecc7;
+}
+.wnd1 table{
+	border-collapse:collapse;
+}
+.wnd1 table thead{
+	background-color:#caa77d;
+}
+.wnd1 table tbody{
+	font-size:0.8em;
+}
+.wnd2{
+	padding:10px;
+	line-height:1.4;
+}
+
+
+#footer{
+	float:left;
+	margin-top:10px;
+	width:100%;
+	height:30px;
+	color:white;
+	background-color:#92dc61;
+}
+
+
+
+
+
+

@@ -1,0 +1,130 @@
+﻿@CHARSET "UTF-8";
+
+	
+body{
+	margin:0px;
+	font-size:12px;
+}
+
+h4{
+	color:#62793b;
+}
+
+h3{
+	color:#62793b;
+}
+
+h2{
+	color:#62793b;
+}
+h1{
+	color:#84a350;
+}
+
+#contents{
+	margin:0px;
+	width:316px	;
+	text-align: left;
+	margin-left : auto ; 
+	margin-right : auto ;
+	color:#32180c;
+	border: 1px #cccccc solid;
+	}
+
+#header{
+	padding-top:15px;
+	padding-bottom:30px;
+
+	height:15px;
+	width:316px;
+	font-size:1.8em;
+	font-weight: bold;
+	color:White;
+    background-image:url(pic/logo.png); /* 背景画像のURL */
+    background-repeat:repeat;
+	
+	text-align:center;
+	}
+
+
+.err{
+		color:red;
+	}
+
+
+	
+
+
+.left_{
+	margin-left : 0px ; 
+	margin-right : auto ;
+	text-align : left ;
+	}
+.center_{
+	margin-left : auto ; 
+	margin-right : auto ;
+	width:100%;
+	text-align:center;
+	}
+	
+table{
+	border-collapse:collapse;
+	border-color:#b7badb;
+	font-size:12px;
+}
+table thead{
+	background-color:#cccee6;
+}
+table tbody{
+	
+	
+}
+
+table td {
+   border-width: 1px 1px; 
+   border-color: #b7badb; /* 線色：緑 */
+   border-style: solid; /* 線種：実線 */
+   
+}
+table th {
+   border-width: 1px 1px; 
+   border-color: #b7badb; /* 線色：緑 */
+   border-style: solid; /* 線種：実線 */
+ 
+}
+
+
+#footer{
+	padding-top:7px;
+	text-align:center;
+	width:100%;
+	height:30px;
+	color:#006633;
+}
+
+
+
+.word_break{
+	
+	word-wrap:break-word;
+	overflow:auto;
+}
+
+/* ボタン共通スタイル */
+.com_botton{
+	width:80px;
+	background-color:#fcd5b4;
+	float:right;
+}
+/* セルの枠線を消去*/
+.td_none{
+	border-style:none;
+	background-color:white;
+}
+/*脚注*/
+.foot_note{
+	font-size:0.8em;
+	color:#3e5e5e;
+	}
+	
+

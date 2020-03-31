@@ -1,0 +1,67 @@
+﻿<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<link href="css/common.css" rel="stylesheet" type="text/css" />
+	<title>社員日報管理システム・社員編集</title>
+</head>
+<body>
+<div id="header">
+<input type="button" value="ログアウト" onClick="javascript:location.href='login.htm'"/><br>
+<h1>社員編集</h1>
+</div>
+<div id="contents">
+<table border="1">
+<thead>
+	<tr>
+		<th>項目名</th>
+		<th>入力</th>
+		<th>説明</th>
+		
+	</tr>
+</thead>
+<tbody>
+	<tr>
+		<td>社員番号</td><td>1001</td><td></td>
+	</tr>
+	<tr>
+		<td>役職</td><td><input type="text" value="部長"></td><td>50文字以内で入力してください。例：西表　山猫</td>
+	</tr>
+	<tr>
+		<td>名前</td><td><input type="text" value="西表　山猫"></td><td>50文字以内で入力してください。例：イリオモテ　ヤマネコ</td>
+	</tr>
+	<tr>
+		<td>フリガナ</td><td><input type="text" value="イリオモテ　ヤマネコ"></td><td>カタカナで50文字以内で入力してください。</td>
+	</tr>
+	<tr>
+		<td>パスワード</td><td><input type="password" value="iriomoteyamaneko"></td><td>半角英数字で8文字以上で入力してください。</td>
+	</tr>
+	<tr>
+		<td>パスワード確認</td><td><input type="password" value="iriomoteyamaneko"></td><td>確認のためもう一度パスワードを入力してください。</td>
+	</tr>
+	<tr>
+		<td>郵便番号</td><td><input type="text" value="1234567"></td><td>７桁の半角数字で入力してください。例：1234567</td>
+	</tr>
+	<tr>
+		<td>都道府県</td><td><input type="text" value="沖縄県"></td><td>都道府県を選択してください。</td>
+	</tr>
+	<tr>
+		<td>住所</td><td><input type="text" value="石垣市美崎町11番地"></td><td>都道府県から下の住所を100文字以内で入力してください。例：石垣市美崎町9-999猫アパート909</td>
+	</tr>
+	<tr>
+		<td>メールアドレス</td><td><input type="text" value="iriomoteyamaneko@fuemusi.ne.jp"></td><td>半角英数字で100文字以内で入力してください。</td>
+	</tr>
+	<tr>
+		<td>電話番号</td><td><input type="text" value="090-1234-xxxx"></td><td>20文字以内で入力してください。</td>
+	</tr>
+	<tr>
+		<td>管理者権限</td><td><input type="checkbox" checked></td><td>社員の日報を確認する権限のある場合はチェックを入れてください。</td>
+	</tr>
+
+</tbody>
+</table>
+<input type="submit" value="次へ" onClick="javascript:location.href='staffEditInpChk.htm'"/>
+</div><!-- contents -->
+<div id="footer">(C)Kenji Uehara</div>
+</body>
+</html>

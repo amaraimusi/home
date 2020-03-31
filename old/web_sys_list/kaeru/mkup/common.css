@@ -1,0 +1,346 @@
+ @charset "utf-8";
+/* CSS Document */
+
+
+p, h1, h2, h3, h4, h5, h6, ul {
+	margin: 0px;
+	padding: 0px;
+}
+
+
+
+
+
+body {
+	margin: 0px;
+	padding: 0px;
+	background-image: url(images/main_back.jpg);
+	background-repeat: repeat;
+	
+}
+
+body a{
+	
+	color:#0e269c;
+}
+
+body a:hover{
+	color:red;
+}
+
+
+#container {
+	width: 1100px;
+	min-width:480px;
+	max-width:1000px;
+	
+
+}
+
+
+
+/*   ▼▼▼  トップメニュー   ▼▼▼    */
+#topmenu{
+	height:44px;	
+	background-image: url(images/top_menu_back.png);  /* 背景イメージをセット */
+	background-repeat: repeat-x;	
+}
+
+
+
+
+ul#topmenu_navi{
+    width:auto;
+    list-style:none;
+    overflow:hidden;
+	list-style-type: none;
+}
+ul#topmenu_navi li{
+    list-style:none;
+    float:left;
+    height:44px;
+	text-align: center;
+	margin:0px;
+    display:block;
+    overflow:hidden;
+
+}
+ul#topmenu_navi li a {
+    display: block;
+    overflow: hidden;
+    background-image: url(images/top_menu_btn.png);
+	height:100%;
+    padding-top:44px;
+}
+
+
+
+/* topmenu normal
+---------------------*/
+    #topmenu1 a { width:150px; background-position:0       0;}
+    #topmenu2 a { width:150px; background-position:-150px  0;}
+    #topmenu3 a { width:150px; background-position:-300px  0;}
+    #topmenu4 a { width:150px; background-position:-450px  0;}
+    #topmenu5 a { width:150px; background-position:-600px  0;}
+    #topmenu6 a { width:150px; background-position:-750px  0;}
+/* topmenu rollover
+----------------------*/
+    #topmenu1 a:hover { width:150px; background-position:0       -44px;}
+    #topmenu2 a:hover { width:150px; background-position:-150px  -44px;}
+    #topmenu3 a:hover { width:150px; background-position:-300px  -44px;}
+    #topmenu4 a:hover { width:150px; background-position:-450px  -44px;}
+    #topmenu5 a:hover { width:150px; background-position:-600px  -44px;}
+    #topmenu6 a:hover { width:150px; background-position:-750px  -44px;}
+
+
+
+
+/*   ▲▲▲  トップメニュー   ▲▲▲    */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  ▼▼▼  サイドメニュー   ▼▼▼ */
+
+#sidebar {
+	float: left;	
+	display: inline;
+	width:150px; /* 横幅を変更 */
+	border-color: #f2f1d5;
+	background-color: #8dc6e8; /* 背景カラーを変更 */
+	margin:0px;
+}
+
+
+#sidebar li {
+	margin-top: 5px;
+	margin-bottom: 5px;
+	font-weight: normal;
+	color: #2f4964;
+	font-size: 11px;
+}
+
+#sidebar li a {
+	font-weight: normal;
+	color: #1217ed;
+	font-size: 11px;
+	text-decoration: none;
+	color: #1217ed;
+	
+}
+
+#sidebar li a:hover {
+	color: blue;
+	background-color:#cae4f4;
+	color: red;
+}
+
+#sidebar p {
+	color: #0d3d53;
+	font-size: 13px;
+	margin-top: 0px;
+	margin-bottom: 0px;	
+	padding-top: 0px;
+	padding-left: 0px; /* 左余白を変更 */
+	display:block;
+	background:url(images/category1backpic.png) no-repeat;
+	height:45px;
+}
+#sidebar p a{
+	text-decoration: none;
+}
+
+#sidebar p a:hover {
+	color: red;
+}
+ 
+ /*   ▲▲▲  サイドメニュー   ▲▲▲    */
+ 
+ 
+ 
+
+
+
+/* ここからメインコンテンツの中身の設定 */
+
+
+
+#main_content{
+	float:left;
+	display: inline;
+	width: 70%;
+	height: 100%;
+	color:#26471c;
+	line-height:24px;
+	text-indent:1em;
+	margin-left:20px;
+}
+#main_content h1{
+	color:#075667;
+}
+#main_content p{
+	color:#a34d2c;
+}
+#main_content p #values{
+	color:#f22406;
+	font-style:italic;
+}
+
+
+
+	
+	.submit_btn {
+		text-align:left;
+		text-indent:0em;
+	}
+
+
+
+
+
+/* パンくずリスト */
+#pankuzu{
+	font-size:0.8em;
+	color:#274bf8;
+}
+
+
+
+/* ウィンドウ１ */
+#window1{
+	width:350px;
+	height:70px;
+	border-style:ridge;
+	border-width:5px;
+	border-color:#acfffe;
+	background-color:#ceffff;
+	text-indent:0em;
+	
+}
+#window1 table tr td{
+	font-size:0.9em;
+	color:#405c1d;
+}
+
+
+
+/* 昇順・ソートボタン */
+.sortBtn1{
+    width:19px;
+	height:19px;
+    list-style:none;
+    overflow:hidden;
+	list-style-type: none;
+}
+.sortBtn1 a{
+	width:19px;
+	height:19px;
+	background-color:red;
+	background-image: url(images/sort_btn1.png);
+    display: block;
+    overflow:hidden;
+}
+.sortBtn1 a:hover { width:19px; background-position:0       -19px;}
+
+
+/* 降順・ソートボタン */
+.sortBtn2{
+    width:19px;
+	height:19px;
+    list-style:none;
+    overflow:hidden;
+	list-style-type: none;
+}
+.sortBtn2 a{
+	width:19px;
+	height:19px;
+	background-color:red;
+	background-image: url(images/sort_btn2.png);
+    display: block;
+    overflow:hidden;
+}
+.sortBtn2 a:hover { width:19px; background-position:0       -19px;}
+
+
+/*  ▼▼▼ ” カートにいれる”ボタン   ▼▼▼ */
+.in_cart_btn {
+	width:99px;
+	height:23px;
+    overflow:hidden;	
+}
+.in_cart_btn a{
+	display: block;
+    overflow: hidden;
+    background-image: url(images/cart_btn.png);
+    padding-top:23px;
+    overflow:hidden;	
+}
+.in_cart_btn a { width:99px; background-position:0       0;}
+.in_cart_btn a:hover { width:99px; background-position:0       -23px;}
+
+/*  ▼▼▼ ”戻る”ボタン   ▼▼▼ */
+#historyBack {
+	width:100px;
+	height:30px;
+    overflow:hidden;	
+}
+#historyBack a{
+	display: block;
+    overflow: hidden;
+    background-image: url(images/his_back.png);
+    padding-top:30px;
+    overflow:hidden;	
+}
+#historyBack a { width:100px; background-position:0       0;}
+#historyBack a:hover { width:100px; background-position:0       -30px;}
+
+/* エラーメッセージ */
+#err{
+	margin-top:200px;
+	width:auto;
+	height:70px;
+	border-style:ridge;
+	border-width:5px;
+	border-color:#acfffe;
+	background-color:#ceffff;
+	text-indent:0em;
+	color:#da690b;
+}
+
+/* ここからフッターの中身の設定 */
+#footer {
+	clear: both;
+	padding: 0px;
+	height: 44px;
+    overflow: hidden;
+}
+
+#footer h6 {
+	height:44px;	
+	background-image: url(images/top_menu_back.png);  /* 背景イメージをセット */
+	background-repeat: repeat-x;
+	padding-top: 15px;	
+
+	font-family: Arial, Helvetica, sans-serif;
+	color: #FFFFFF;
+	font-weight: normal;
+	font-size: 10px;
+	text-align: center;
+}
+/* ここまでフッターの中身の設定 */
+

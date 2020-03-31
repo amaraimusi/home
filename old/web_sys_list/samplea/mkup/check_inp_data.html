@@ -1,0 +1,156 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>サンプルＡ-お届け先情報確認</title>
+<link href="common.css" rel="stylesheet" type="text/css" />
+<link href="check_inp_data.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="common.js"></script>
+
+<body>
+<div id="container">
+	<div id="logo" ><center><img src="images/top/logo/logo_title.png" alt="★サンプルＡ" width="400" height="100" /></center></div>
+		
+	<div id="navibar" >
+		<center>
+			<table id="navi_btn">
+			<tr>
+				<td>
+					<a href="index.html">ホーム</a>
+				</td>
+				<td>
+					<a href="item_list.html">ショップ</a>
+				</td>
+				<td>
+					<a href="cart.html">カートを見る</a>
+				</td>
+				<td>
+					<a href="#">雑記</a>
+				</td>
+				<td>
+					<a href="#">アクセス</a>
+				</td>
+			</tr>
+			</table>
+
+		</center>
+	</div>
+		
+ 	<div id="sidebar">
+		<p><a href="item_list.html" OnMouseOver ="showChange('tropical_fish')">熱帯魚</a></p>
+		<ul id="tropical_fish">
+			<li><a href="item_list.html">熱帯魚</a></li>
+			<li><a href="item_list.html">海水魚</a></li>
+			<li><a href="item_list.html">熱帯魚用品</a></li>
+		</ul>
+		<p><a href="item_list.html" OnMouseOver ="showChange('reptiles')">爬虫類</a></p>
+		<ul id="reptiles">
+		    <li><a href="item_list.html">カメ</a></li>
+		    <li><a href="item_list.html">トカゲ</a></li>
+		</ul>
+		<p><a href="#" OnMouseOver ="showChange('insect')">昆虫</a></p>
+		<ul id="insect">
+		    <li><a href="item_list.html">カブトムシ</a></li>
+		    <li><a href="item_list.html">クワガタ</a></li>
+		    <li><a href="item_list.html">その他</a></li>
+		</ul>
+	</div>
+
+<!-- メインコンテンツ-->
+
+    <div id = "main_content">
+
+		<div id = "main_area1">
+			<h3>お届け先を確認してください</h3>
+			<form>
+			<table  border="0" cellpadding="3">
+				<tr>
+					<th id="komoku"></th>
+					<th></th>
+				</tr>				
+				<tr>
+					<td>お名前</td>
+					<td>
+						<span class="inp_check">織田信長</span>
+					</td>
+				</tr>
+				<tr>
+					<td>ふりがな </td>
+					<td>
+						<span class="inp_check">おだのぶなが</span>
+					</td>
+				</tr>
+				<tr>
+					<td>郵便番号</td>
+					<td>
+						<span class="inp_check">521-1321<span>
+					</td>
+				</tr>
+				<tr>
+					<td>住所</td>
+					<td>
+						<span class="inp_check">滋賀県蒲生郡安土町安土城<span>
+					</td>
+				</tr>
+				<tr>
+					<td>電話番号</td>
+					<td>
+						<span class="inp_check">090-xxxx-xxxx<span>
+					</td>
+				</tr>
+				<tr>
+					<td>メールアドレス</td>
+					<td>
+						<span class="inp_check">oda_nobunaga1582@yaboo.co.jp<span>
+					</td>
+				</tr>
+		
+				<tr>
+					<td>支払い方法</td>
+					<td>
+						<span class="inp_check">銀行振り込み<span>
+					</td>
+				</tr>
+				<tr>
+					<td>代金</td>
+					<td>
+						<span class="inp_check_daikin">お支払い金額\21,200</span>
+						<span class="inp_check">（商品小計\20,000</span>
+						<span class="inp_check">送料\1,200）</span>
+					</td>
+				</tr>
+				<tr>
+					<td>配達希望日</td>
+					<td>
+						<span class="inp_check">6月21日<span>
+					</td>
+				</tr>
+				<tr>
+					<td>配達希望時間帯</td>
+					<td>
+						<span class="inp_check">指定なし<span>
+					</td>
+				</tr>
+				<tr>
+					<td>備考欄</td>
+					<td>
+						<span class="inp_check">サンプル入力データです。<span>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2" align="center">
+						<input type="button" name="reset" value="修正"  onClick="javascript:location.href='cus_data_inp2.html'"><input type="button"  value="注文する" onClick="javascript:location.href='oder_finish.html'">
+					</td>
+				</tr>
+			</table>
+			</form>
+		</div>
+	
+	</div>
+	
+	<div id="footer">
+    	<h6>COPYRIGHT 2008 UEHARA</h6>
+  	</div>
+</div>
+</body>
+</html>

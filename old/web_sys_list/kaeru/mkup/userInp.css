@@ -1,0 +1,73 @@
+﻿@charset "utf-8";
+@import "common.css";
+
+
+/*エラーメッセージ*/
+#err_massage{
+	margin-top:10px;
+	color:red;
+}
+
+.err_msg2{
+	color:red;
+}
+
+
+
+
+/* ▼▼▼ 入力テーブル ▼▼▼ */
+
+#inputTable{
+	table-layout:fixed;
+	width:100%;
+	border-collapse:collapse;
+	border-color:#0a6276;
+	text-indent:0em;
+	color:#0a3811;
+}
+
+#inputTable #th_inpName{
+	width:20%;
+}
+
+#inputTable #th_input{
+	width:40%;
+}
+
+#inputTable #th_note{
+	width:40%;
+}
+
+
+
+#inputTable thead{
+	background-color:#90d7f3; 
+	font-size:0.8em;
+}
+
+
+#inputTable tbody{
+	background-color:#acfffe; 
+	font-size:0.8em;
+
+}
+
+/*必須入力*/
+.indisInp{
+	color:red;
+	font-size:0.8em;
+}
+
+/*テキストボックス*/
+.text32 input{
+	width:230px;
+}
+.text100per input{
+	width:100%;
+}
+
+
+
+
+
+

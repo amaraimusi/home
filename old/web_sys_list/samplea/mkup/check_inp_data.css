@@ -1,0 +1,42 @@
+#main_content{	
+	float:left;
+	display: inline;
+	width: 75%;
+	height: 100%;
+	color:#26471c;
+	line-height:24px;
+}
+
+.indes{
+	font-size:0.5em;
+	color:#ff0000;
+}
+
+
+#main_area1{
+	margin-top:50px;
+	
+}
+#main_area1 table{
+	text-align:left;
+	border-spacing:0px;
+}
+
+.inp_check{
+	color  :#4a2b06;
+}
+
+
+.inp_check_daikin{
+	color  :#db170d;
+}
+td #komoku{
+	width:100px;
+}
+
+#memo1{
+	font-size:0.8em;
+}
+
+
+
